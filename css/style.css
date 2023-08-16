@@ -1,0 +1,12 @@
+.body {
+  background-color: rgb(204, 204, 204);
+}
+
+li {
+  float: left;
+}
+.body li a {
+  display: block;
+  padding: 8px;
+  background-color: #dddd;
+}
