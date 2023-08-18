@@ -1,17 +1,33 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .body {
   background-color: rgb(204, 204, 204);
 }
 
-.nav .navbar {
-  position: -webkit-sticky; /*safari*/
-  position: sticky;
+.navbar {
+  padding: 0px;
+}
+
+.navbar .nav {
+  position: fixed;
   top: 0;
-}
-li {
-  float: left;
+  align-items: center;
+  justify-content: space-between;
   list-style: none;
+
+  display: flex;
+  flex-direction: row;
+  float: left;
 }
-a {
+
+.navbar .nav li {
   display: block;
-  padding: 8px;
+  padding: 10px;
+  text-align: center;
+}
+
+.navbar .nav a {
+  text-decoration: none;
 }
