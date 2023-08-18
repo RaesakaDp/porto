@@ -2,32 +2,107 @@ html {
   scroll-behavior: smooth;
 }
 
-.body {
-  background-color: rgb(204, 204, 204);
+body {
+  min-width: 800px;
+  background: #cecece;
+  margin: 0px;
+}
+
+/* navbar */
+#trapezoid {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+  border: 80px solid rgba(0, 0, 0, 0);
+  border-top: 0 solid;
+  border-bottom: 90px solid rgba(1, 1, 1, 0.4);
+  -webkit-border-radius: 20px 20px 0 0;
+  border-radius: 20px 20px 0 0;
+  font: normal 100% / normal Arial, Helvetica, sans-serif;
+  color: rgba(0, 0, 0, 0.7);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+  margin-top: -50px;
+  width: 410px;
+  position: relative;
+  transition: all 0.9s ease;
+  padding-left: 2%;
+}
+
+#trapezoid a {
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+}
+
+.sub-home {
+  display: none;
+  position: absolute;
+  right: 0;
+  left: 0;
+
+  z-index: 1;
+  transform: perspective(-10px);
+}
+
+#trapezoid:hover .sub-home {
+  justify-content: center;
+  margin-top: 50px;
 }
 
 .navbar {
-  padding: 0px;
-}
-
-.navbar .nav {
-  position: fixed;
+  position: sticky;
   top: 0;
-  align-items: center;
-  justify-content: space-between;
-  list-style: none;
-
   display: flex;
-  flex-direction: row;
+  overflow: hidden;
+  justify-content: center;
+  height: 100px;
+  opacity: 50%;
+}
+
+.navbar a {
   float: left;
-}
-
-.navbar .nav li {
-  display: block;
-  padding: 10px;
+  font-size: 14px;
+  color: white;
   text-align: center;
+  padding: 14px 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all 0.9s ease;
 }
 
-.navbar .nav a {
-  text-decoration: none;
+.navbar a:hover {
+  background: #8ca6db;
+  color: black;
+  border-radius: 5px;
+}
+
+section {
+  margin: 0em 10em 10em 10em;
+  padding: 3em 10em 3em 10em;
+}
+
+h1 {
+  color: #111;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 200px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  color: #111;
+  font-family: "Calibri", sans-serif;
+  font-size: 25px;
+  line-height: 1.5;
+}
+
+hr {
+  background-color: #000;
 }
