@@ -16,7 +16,7 @@ body {
 }
 
 /* navbar */
-#trapezoid {
+.trapezoid {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -37,11 +37,13 @@ body {
   position: relative;
   transition: all 0.9s ease;
   padding-left: 2%;
+  /* backdrop-filter: blur(5px); */
 }
 
-#trapezoid a {
+.trapezoid a {
   -webkit-transform: rotateX(180deg);
   transform: rotateX(180deg);
+  backdrop-filter: blur(5px);
 }
 
 .sub-home {
@@ -54,7 +56,7 @@ body {
   transform: perspective(-10px);
 }
 
-#trapezoid:hover .sub-home {
+.trapezoid:hover .sub-home {
   justify-content: center;
   margin-top: 50px;
 }
@@ -66,7 +68,8 @@ body {
   overflow: hidden;
   justify-content: center;
   height: 100px;
-  opacity: 50%;
+  /* opacity: 90%; */
+  /* backdrop-filter: blur(5px); */
 }
 
 .navbar a {
@@ -82,7 +85,7 @@ body {
 }
 
 .navbar a:hover {
-  background: #8ca6db;
+  background: #b3a89b;
   color: black;
   border-radius: 5px;
 }
@@ -105,9 +108,9 @@ p {
   line-height: 1.5;
 }
 
-hr {
-  background-color: #000;
-}
+/* hr {
+  background-color: #ff0000;
+} */
 
 /* hero section */
 #hero {
@@ -116,6 +119,7 @@ hr {
   background: url("../img/bg-baru.jpg") top center;
   background-size: cover;
   margin-top: -100px;
+  object-fit: cover;
 }
 /* #hero .hero-container {
   position: relative;
@@ -141,15 +145,16 @@ hr {
   padding-left: 10rem;
 }
 
-#hero p span {
+/* #hero p span {
   color: #fff;
   padding-bottom: 4px;
   letter-spacing: 1px;
-  border-bottom: 3px solid #149ddd;
-}
+  border-bottom: 3px solid #dd6e14;
+} */
 
 @media (min-width: 1024px) {
   #hero {
+    background-repeat: no-repeat;
     background-attachment: fixed;
   }
 }
@@ -165,4 +170,46 @@ hr {
     line-height: 24px;
     margin-bottom: 30px;
   }
+}
+
+/* about */
+/* .container-about {
+  background-color: black;
+} */
+
+#about h2 {
+  color: #111;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 420;
+  letter-spacing: -1px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  padding-top: 15px;
+}
+
+#about hr {
+  width: 183px;
+  height: 2px;
+  background-color: rgb(202, 105, 13);
+  margin-top: -4px;
+  margin-left: 540px;
+}
+
+#about p {
+  display: flex;
+  flex-direction: row;
+  padding-top: 2rem;
+  margin-left: 40rem;
+  margin-right: 10rem;
+  text-align: justify;
+  font-size: larger;
+}
+
+#about .row img {
+  display: flex;
+  flex-direction: row;
+  height: 800px;
+  width: 600px;
 }

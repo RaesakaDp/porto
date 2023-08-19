@@ -5,9 +5,9 @@ $(".expandHome").mouseover(function () {
   });
 });
 
-$("#trapezoid")
+$(".trapezoid")
   .mouseleave(function () {
-    $("#trapezoid").css({
+    $(".trapezoid").css({
       "margin-top": "-50px",
     });
     $(".sub-home").css({
@@ -15,7 +15,7 @@ $("#trapezoid")
     });
   })
   .mouseenter(function () {
-    $("#trapezoid").css({
+    $(".trapezoid").css({
       "margin-top": "0px",
     });
   });
