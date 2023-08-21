@@ -90,27 +90,12 @@ body {
   border-radius: 5px;
 }
 
-/* h1 {
-  color: #111;
-  font-family: "Helvetica Neue", sans-serif;
-  font-size: 200px;
-  font-weight: bold;
-  letter-spacing: -1px;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-} */
-
 p {
   color: #111;
   font-family: "Calibri", sans-serif;
   font-size: 25px;
   line-height: 1.5;
 }
-
-/* hr {
-  background-color: #ff0000;
-} */
 
 /* hero section */
 #hero {
@@ -229,6 +214,54 @@ p {
   margin-bottom: 45px;
 }
 
+/* .main-education .content-education {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+
+.main-education .content-education .overlay-text-education {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #585555;
+  overflow: hidden;
+  width: 300px;
+  height: 0;
+  transition: 0.5s ease;
+}
+
+.main-education .content-education .img-container {
+  width: 300px;
+}
+
+.main-education
+  .content-education
+  .img-container:hover
+  .overlay-text-education {
+  height: 20%;
+}
+
+.content-education .overlay-text-education .text-education {
+  white-space: nowrap;
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.Education .text-education a {
+  color: white;
+  text-decoration: none;
+} */
+
 /* Gallery img Education Start */
 
 .Education {
@@ -246,6 +279,7 @@ p {
   align-items: center;
   padding: 10px auto 90px auto;
   padding-bottom: 3rem;
+  justify-content: space-around;
 }
 
 .Education .main-education .img-container {
@@ -292,5 +326,4 @@ p {
   color: white;
   text-decoration: none;
 }
-/* end w3school */
 /* Gallery img Education End */
