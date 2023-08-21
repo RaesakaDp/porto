@@ -181,7 +181,7 @@ p {
 
 .about img {
   height: auto;
-  width: 430px;
+  width: 400px;
   border-radius: 20px;
 }
 
@@ -190,14 +190,14 @@ p {
 }
 
 .about hr {
-  width: 170px;
+  width: 150px;
   height: 2px;
   margin-left: 2px;
-  margin-top: -20px;
+  margin-top: -30px;
   background-color: #b9552d;
 }
 
-.main {
+.main-about {
   width: 1130px;
   max-width: 95%;
   margin: 0 auto;
@@ -208,9 +208,12 @@ p {
 
 .about-text h1 {
   color: rgb(0, 0, 0);
-  font-size: 70px;
+  font-size: 60px;
   text-transform: capitalize;
   margin-bottom: 20px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  font-style: oblique;
 }
 
 .about-text h1 span {
@@ -225,3 +228,69 @@ p {
   font-size: 20px;
   margin-bottom: 45px;
 }
+
+/* Gallery img Education Start */
+
+.Education {
+  background-color: #b9552d;
+}
+
+.Education h2 {
+  font-size: 34px;
+  text-align: center;
+}
+
+.main-education {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px auto 90px auto;
+  padding-bottom: 3rem;
+}
+
+.Education .main-education .img-container {
+  position: relative;
+  width: 300px;
+}
+
+.Education .main-education .img-container .img-education {
+  display: block;
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+}
+
+.Education .overlay-text-education {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #585555;
+  overflow: hidden;
+  width: 300px;
+  height: 0;
+  transition: 0.5s ease;
+}
+
+.Education .img-container:hover .overlay-text-education {
+  height: 20%;
+}
+
+.Education .text-education {
+  white-space: nowrap;
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.Education .text-education a {
+  color: white;
+  text-decoration: none;
+}
+/* end w3school */
+/* Gallery img Education End */
