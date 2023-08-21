@@ -265,11 +265,28 @@ p {
 /* Gallery img Education Start */
 
 .Education {
-  background-color: #b9552d;
+  background-color: #d6d4d4;
+  height: 40rem;
 }
 
 .Education h2 {
-  font-size: 34px;
+  color: rgb(0, 0, 0);
+  font-size: 50px;
+  text-align: center;
+  padding-top: 2rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  font-style: oblique;
+}
+
+.Education hr {
+  padding-top: -5rem;
+  margin-top: -3rem;
+  margin-bottom: 4rem;
+  background-color: #b9552d;
+  width: 9rem;
+  height: 2px;
   text-align: center;
 }
 
@@ -282,7 +299,8 @@ p {
   justify-content: space-around;
 }
 
-.Education .main-education .img-container {
+.Education .main-education .img-container,
+.Education .main-education .img-container:nth-child(3) {
   position: relative;
   width: 300px;
 }
@@ -292,6 +310,10 @@ p {
   width: 300px;
   height: auto;
   border-radius: 20px;
+}
+.Education .main-education .img-container:hover {
+  transform: scale(1.1);
+  transition: 0.6s ease-in-out;
 }
 
 .Education .overlay-text-education {
@@ -308,6 +330,8 @@ p {
 
 .Education .img-container:hover .overlay-text-education {
   height: 20%;
+  border-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .Education .text-education {
