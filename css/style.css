@@ -315,6 +315,11 @@ p {
   transition: 0.6s ease-in-out;
 }
 
+.Education .main-education .img-container:active {
+  transform: scale(0);
+  transition: 0.5s ease;
+}
+
 .Education .overlay-text-education {
   position: absolute;
   bottom: 0;
@@ -355,9 +360,11 @@ p {
 
 .Contact {
   padding: 1rem;
-  height: 400px;
+  padding-top: 5rem;
+  height: 600px;
   /* text-align: center; */
   box-sizing: border-box;
+  border-radius: 30px;
 }
 
 .Contact .contact-container {
@@ -365,15 +372,15 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border-radius: 30px;
 }
 
 .Contact .contact-container .contact-main {
-  height: 350px;
+  height: 320px;
   width: 300px;
   padding: 2rem;
-  /* border-bottom: 2px; */
-  background-color: #b9552d60;
-  border-radius: 70px;
+  background-color: #b6b3b260;
+  border-radius: 40px;
 }
 
 .contact-main .form-grup {
@@ -386,32 +393,41 @@ p {
 
 .contact-main button {
   margin-left: 1rem;
+  cursor: pointer;
 }
 
 .contact-main .form-grup input {
   height: 30px;
-  width: 250px;
+  width: 260px;
   border: none;
   outline: none;
-  border-radius: 5px;
-  color: white;
+  padding: 1.2px;
+  border-bottom: 1px solid #000000a6;
+  text-align: 6px;
+  font-size: 13px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 28px;
   background-color: transparent;
-  /* margin-left: -6rem; */
 }
 .contact-main .form-grup textarea {
   height: 200px;
-  width: auto;
-  border: none;
+  width: 260;
+  margin-top: 1.5px;
   outline: none;
   border-radius: 8px;
   background-color: transparent;
-  /* border-bottom: 10px; */
-  /* border-bottom-width: 10px; */
-  /* border-bottom-color: #111; */
-  /* justify-content: space-around; */
-  /* text-align: left; */
-  /* align-items: center; */
-  /* background-color: aquamarine; */
+}
+
+.contact-container .contact-main button {
+  font-size: 12px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  line-break: 2px;
+  letter-spacing: 1.6;
+  background-color: #b9552d;
+  border-radius: 5px;
+  outline: none;
+  border: none;
 }
 
 .Contact .contact-container h1 {
@@ -423,13 +439,33 @@ p {
 }
 
 .Contact .contact-container hr {
-  width: 10rem;
+  width: 8rem;
   height: 2px;
   background-color: #b9552d;
   margin-top: -2rem;
   margin-bottom: 3rem;
+  margin-left: 33rem;
 }
 
 .Contact .contact-container span {
   color: #b9552d;
+}
+
+footer {
+  background-color: rgba(235, 235, 235, 0.8);
+  color: #1c1b1f;
+  /* margin-top: 15rem; */
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  padding: 10px;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+
+footer p a {
+  color: #1c1b1f;
+  text-decoration: none;
 }
