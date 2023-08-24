@@ -299,8 +299,7 @@ p {
   justify-content: space-around;
 }
 
-.Education .main-education .img-container,
-.Education .main-education .img-container:nth-child(3) {
+.Education .main-education .img-container {
   position: relative;
   width: 300px;
 }
@@ -351,3 +350,86 @@ p {
   text-decoration: none;
 }
 /* Gallery img Education End */
+
+/* contact start */
+
+.Contact {
+  padding: 1rem;
+  height: 400px;
+  /* text-align: center; */
+  box-sizing: border-box;
+}
+
+.Contact .contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Contact .contact-container .contact-main {
+  height: 350px;
+  width: 300px;
+  padding: 2rem;
+  /* border-bottom: 2px; */
+  background-color: #b9552d60;
+  border-radius: 70px;
+}
+
+.contact-main .form-grup {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  border: none;
+  /* align-items: center; */
+}
+
+.contact-main button {
+  margin-left: 1rem;
+}
+
+.contact-main .form-grup input {
+  height: 30px;
+  width: 250px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: white;
+  background-color: transparent;
+  /* margin-left: -6rem; */
+}
+.contact-main .form-grup textarea {
+  height: 200px;
+  width: auto;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  background-color: transparent;
+  /* border-bottom: 10px; */
+  /* border-bottom-width: 10px; */
+  /* border-bottom-color: #111; */
+  /* justify-content: space-around; */
+  /* text-align: left; */
+  /* align-items: center; */
+  /* background-color: aquamarine; */
+}
+
+.Contact .contact-container h1 {
+  text-align: center;
+  font-size: 50px;
+  font-family: "Poppins", sans-serif;
+  font-style: oblique;
+  margin-top: -1rem;
+}
+
+.Contact .contact-container hr {
+  width: 10rem;
+  height: 2px;
+  background-color: #b9552d;
+  margin-top: -2rem;
+  margin-bottom: 3rem;
+}
+
+.Contact .contact-container span {
+  color: #b9552d;
+}

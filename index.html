@@ -136,23 +136,31 @@
       </div>
     </div>
     <!-- Education End -->
-    <div class="Contact">
-      <section id="Contact">
-        <h1>Contact</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-          ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-          sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-          et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-          takimata sanctus est Lorem ipsum dolor sit amet.
-        </p>
-        <hr />
-      </section>
+    <div class="Contact" id="Contact">
+      <div class="contact-container">
+        <h1><span>Get </span>in Touch</h1>
+        <hr>
+        <div class="contact-main">
+          <form onsubmit="sendEmail(); reset(); return false;">
+            <div class="form-grup">
+              <input type="text" title="name" id="name" placeholder="Name"></input>
+            </div>
+              <div class="form-grup">
+                <input type="email" name="email" id="email" placeholder="Email" required>
+              </div>
+              <div class="form-grup">  
+                <textarea name="pesan" id="message" rows="4" placeholder="Ur Message or quesion"></textarea>
+              </div>
+                <button type="button">Submit</button>
+            <!-- <input type="submit" value="submit"> -->
+          </form>
+        
+        </div>
+      </div>
     </div>
+
+    <!-- Form To Gmail -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 
     <!-- link js panggil -->
     <script src="js/script.js"></script>
