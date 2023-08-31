@@ -149,6 +149,10 @@ p {
     font-size: 28px;
     line-height: 36px;
   }
+  #hero {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
 
   #hero h2 {
     font-size: 18px;
@@ -160,7 +164,7 @@ p {
 /* about */
 .about {
   width: 100%;
-  padding: 100px 0px;
+  padding: 90px 0px;
   /* background-color: rgb(255, 255, 255); */
 }
 
@@ -214,54 +218,6 @@ p {
   margin-bottom: 45px;
 }
 
-/* .main-education .content-education {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  justify-content: space-around;
-  position: relative;
-}
-
-.main-education .content-education .overlay-text-education {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #585555;
-  overflow: hidden;
-  width: 300px;
-  height: 0;
-  transition: 0.5s ease;
-}
-
-.main-education .content-education .img-container {
-  width: 300px;
-}
-
-.main-education
-  .content-education
-  .img-container:hover
-  .overlay-text-education {
-  height: 20%;
-}
-
-.content-education .overlay-text-education .text-education {
-  white-space: nowrap;
-  color: white;
-  font-size: 15px;
-  position: absolute;
-  overflow: hidden;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
-
-.Education .text-education a {
-  color: white;
-  text-decoration: none;
-} */
-
 /* Gallery img Education Start */
 
 .Education {
@@ -312,7 +268,7 @@ p {
 }
 .Education .main-education .img-container:hover {
   transform: scale(1.1);
-  transition: 0.6s ease-in-out;
+  transition: 0.6s ease;
 }
 
 .Education .main-education .img-container:active {
@@ -360,11 +316,12 @@ p {
 
 .Contact {
   padding: 1rem;
-  padding-top: 5rem;
+  padding-top: 3rem;
   height: 600px;
   /* text-align: center; */
   box-sizing: border-box;
   border-radius: 30px;
+  margin-bottom: 2rem;
 }
 
 .Contact .contact-container {
@@ -376,7 +333,7 @@ p {
 }
 
 .Contact .contact-container .contact-main {
-  height: 320px;
+  height: 330px;
   width: 300px;
   padding: 2rem;
   background-color: #b6b3b260;
@@ -386,14 +343,11 @@ p {
 .contact-main .form-grup {
   display: flex;
   flex-direction: column;
-  padding: 5px;
+  justify-content: space-between;
+  padding: 5px 10px;
   border: none;
   /* align-items: center; */
-}
-
-.contact-main button {
-  margin-left: 1rem;
-  cursor: pointer;
+  /* filter: blur(10px); */
 }
 
 .contact-main .form-grup input {
@@ -412,22 +366,27 @@ p {
 .contact-main .form-grup textarea {
   height: 200px;
   width: 260;
-  margin-top: 1.5px;
+  margin-top: 10px;
   outline: none;
   border-radius: 8px;
   background-color: transparent;
 }
 
 .contact-container .contact-main button {
+  margin-left: 1rem;
+  cursor: pointer;
   font-size: 12px;
   font-weight: bold;
   font-family: "Poppins", sans-serif;
   line-break: 2px;
   letter-spacing: 1.6;
-  background-color: #b9552d;
+  background-color: transparent;
   border-radius: 5px;
-  outline: none;
-  border: none;
+  outline: 0.5px black;
+  margin: 5px 10px;
+  width: 80px;
+  /* display: flex; */
+  /* border: none; */
 }
 
 .Contact .contact-container h1 {
@@ -456,6 +415,7 @@ footer {
   color: #1c1b1f;
   /* margin-top: 15rem; */
   text-align: center;
+  padding: 10px;
 }
 
 footer p {
