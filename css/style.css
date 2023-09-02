@@ -137,7 +137,7 @@ p {
   border-bottom: 3px solid #dd6e14;
 } */
 
-@media (min-width: 1024px) {
+@media (min-width: 1000px) {
   #hero {
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -320,7 +320,7 @@ p {
   height: 600px;
   /* text-align: center; */
   box-sizing: border-box;
-  border-radius: 30px;
+  border-radius: 100px;
   margin-bottom: 2rem;
 }
 
@@ -412,10 +412,37 @@ p {
 
 footer {
   background-color: rgba(235, 235, 235, 0.8);
-  color: #1c1b1f;
-  /* margin-top: 15rem; */
-  text-align: center;
-  padding: 10px;
+  width: 100%;
+  position: relative;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .sosmed {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+footer .sosmed li {
+  list-style: none;
+}
+
+footer .sosmed li a {
+  font-size: 1.5em;
+  color: #111;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+/* footer .sosmed {
+  text-decoration: none;
 }
 
 footer p {
@@ -428,4 +455,4 @@ footer p {
 footer p a {
   color: #1c1b1f;
   text-decoration: none;
-}
+} */
