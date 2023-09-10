@@ -14,7 +14,7 @@
       src="https://kit.fontawesome.com/6cbf6d93a4.js"
       crossorigin="anonymous"
     ></script>
-    
+
     <!-- Google Font -->
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
@@ -97,7 +97,7 @@
     </div>
     <!-- Education End -->
 
-    <div class="Contact" id="Contact">
+    <!-- <div class="Contact" id="Contact">
       <div class="contact-container">
         <h1>Get in <span>Touch</span></h1>
         <hr>
@@ -114,41 +114,56 @@
                 <textarea name="pesan" id="message" rows="4" placeholder="Your Message"></textarea>
               </div>
                 <button type="button">Submit</button>
-            <!-- <input type="submit" value="submit"> -->
+            <input type="submit" value="submit">
           </form>
         </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- coba contact animation -->
-    <div class="boxEducation">
-<div class="box">
-  <span class="borderline"></span>
-  <form>
-    <h2>Get in Touch!</h2>
-    <div class="inputBox">
-      <input type="text" name="nama" required="required">
-      <span>Your Name</span>
-      <i></i>
+    <div class="boxEducation" id="Contact">
+      <h2>Get In Touch!</h2>
+      <div class="contact-content">
+        <div class="mapcontact">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63268.726883607866!2d112.8638946372033!3d-7.651348225801159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7c5e1a5fb57df%3A0xbe8c958dde768096!2sPasuruan%2C%20Kota%20Pasuruan%2C%20Jawa%20Timur!5e0!3m2!1sid!2sid!4v1694350784714!5m2!1sid!2sid"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="box">
+          <span class="borderline"></span>
+          <form>
+            <h2>Send Message</h2>
+            <hr />
+            <div class="inputBox">
+              <input type="text" name="nama" required="required" />
+              <span>Your Name</span>
+              <i></i>
+            </div>
+            <div class="inputBox">
+              <input type="text" name="email" required="required" />
+              <span>Email id</span>
+              <i></i>
+            </div>
+            <div class="inputBox">
+              <textarea name="pesan" type="text"></textarea>
+              <span>Your Message</span>
+              <i></i>
+            </div>
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
     </div>
-    <div class="inputBox">
-      <input type="text" name="email" required="required">
-      <span>Email id</span>
-      <i></i>
-    </div>
-    <div class="inputBox">
-      <textarea name="pesan" type="text"></textarea>
-      <span>Your Message</span>
-      <i></i>
-    </div>
-    <input type="submit" value="Submit">
-  </form>
-</div>
-</div>
-<!-- coba contact animation -->
+    <!-- coba contact animation -->
 
-    <!-- <footer>
+    <footer>
       <div class="contactsosmed">
         <div class="waves">
           <div class="wave" id="wave1"></div>
@@ -156,27 +171,50 @@
           <div class="wave" id="wave3"></div>
           <div class="wave" id="wave4"></div>
         </div>
-      <ul class="sosmed">
-        <li><a href="http://www.instagram.com/alcatrassie"><ion-icon name="logo-instagram"></ion-icon></a></li>
-        <li><a href="https://www.twitter.com/raesakadp"><ion-icon name="logo-twitter"></ion-icon></a></li>
-        <li><a href="https://github.com/RaesakaDp"><ion-icon name="logo-github"></ion-icon></a></li>
-        <li><a href="https://www.linkedin.com/in/raesaka-shelby-91b49628a/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-      </ul>
-      <p class="text-center">
-        Copyright &copy; 2023 | built with
-        <a href="https://www.instagram.com/alcatrassie" target="_blank"
-          ><ion-icon name="heart-half-outline"></ion-icon></a>
-        by
-        <a href="https://www.instagram.com/kakasugus_" target="_blank"
-          >Shaka</a
-        >
-      </p>
-    </div>
-    </footer> -->
+        <ul class="sosmed">
+          <li>
+            <a href="http://www.instagram.com/alcatrassie"
+              ><ion-icon name="logo-instagram"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com/raesakadp"
+              ><ion-icon name="logo-twitter"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/RaesakaDp"
+              ><ion-icon name="logo-github"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/raesaka-shelby-91b49628a/"
+              ><ion-icon name="logo-linkedin"></ion-icon
+            ></a>
+          </li>
+        </ul>
+        <p class="text-center">
+          Copyright &copy; 2023 | built with
+          <a href="https://www.instagram.com/alcatrassie" target="_blank"
+            ><ion-icon name="heart-half-outline"></ion-icon
+          ></a>
+          by
+          <a href="https://www.instagram.com/kakasugus_" target="_blank"
+            >Shaka</a
+          >
+        </p>
+      </div>
+    </footer>
 
-<!-- Iconsosmed -->
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Iconsosmed -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
     <!-- Form To Gmail -->
     <script src="https://smtpjs.com/v3/smtp.js"></script>
 

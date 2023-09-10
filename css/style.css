@@ -1,6 +1,6 @@
 html {
   scroll-behavior: smooth;
-  max-width: 1366px;
+  max-width: 2560px;
 }
 
 body {
@@ -120,7 +120,7 @@ p {
 #hero h1 {
   margin: 0 0 10px 0;
   font-size: 64px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 56px;
   color: #fff;
   padding-top: 250px;
@@ -142,7 +142,7 @@ p {
   border-bottom: 3px solid #dd6e14;
 } */
 
-@media (max-width: 1366px) {
+@media (max-width: 2560px) {
   #hero {
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -417,7 +417,7 @@ p {
 }
 
 .Contact .contact-container hr {
-  width: 8rem;
+  width: 70px;
   height: 2px;
   background-color: #b9552d;
   margin-top: -2rem;
@@ -533,10 +533,28 @@ footer .wave#wave4 {
 
 .boxEducation {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   min-height: 100vh;
+  padding-bottom: 5rem;
 }
+
+.boxEducation .contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  padding-bottom: 5rem;
+}
+
+.boxEducation .contact-content .mapcontact {
+  padding: 80px;
+}
+/* .boxEducation h2 {
+  display: flex;
+  flex-direction: column;
+} */
 
 .box {
   display: flex;
@@ -545,7 +563,7 @@ footer .wave#wave4 {
   position: relative;
   width: 380px;
   height: 500px;
-  background: #1c1c1c;
+  /* background: #1c1c1c; */
   border-radius: 8px;
   overflow: hidden;
 }
@@ -561,9 +579,9 @@ footer .wave#wave4 {
     0deg,
     transparent,
     transparent,
-    #45f3ff,
-    #45f3ff,
-    #45f3ff
+    #ff8f45,
+    #ff8f45,
+    #ff8f45
   );
   z-index: 1;
   transform-origin: bottom right;
@@ -580,9 +598,9 @@ footer .wave#wave4 {
     0deg,
     transparent,
     transparent,
-    #45f3ff,
-    #45f3ff,
-    #45f3ff
+    #e44545,
+    #e44545,
+    #e44545
   );
   z-index: 1;
   transform-origin: bottom right;
@@ -607,9 +625,9 @@ footer .wave#wave4 {
     0deg,
     transparent,
     transparent,
-    #ff2770,
-    #ff2770,
-    #ff2770
+    #ff8f45,
+    #ff8f45,
+    #ff8f45
   );
   z-index: 1;
   transform-origin: bottom right;
@@ -628,9 +646,9 @@ footer .wave#wave4 {
     0deg,
     transparent,
     transparent,
-    #ff2770,
-    #ff2770,
-    #ff2770
+    #e44545,
+    #e44545,
+    #e44545
   );
   z-index: 1;
   transform-origin: bottom right;
@@ -650,7 +668,7 @@ footer .wave#wave4 {
 .box form {
   position: absolute;
   inset: 4px;
-  background: #222;
+  background: #837f7f;
   padding: 50px 40px;
   border-radius: 8px;
   z-index: 2;
@@ -663,6 +681,13 @@ footer .wave#wave4 {
   font-weight: 500;
   text-align: center;
   letter-spacing: 0.1em;
+}
+
+.box form hr {
+  width: 84px;
+  height: 1px;
+  margin-top: -15px;
+  background: #fff;
 }
 
 .box form .inputBox {
@@ -737,11 +762,12 @@ footer .wave#wave4 {
   padding: 9px 25px;
   background: #ffff;
   cursor: pointer;
-  font-size: 1em;
+  font-size: 15px;
   border-radius: 5px;
+  font-family: "Poppins", sans-serif;
   font-weight: 550;
   width: 100px;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 .box form input[type="submit"]:active {
   opacity: 0.8;
