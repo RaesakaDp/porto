@@ -232,7 +232,7 @@ p {
 
 .Education h2 {
   color: rgb(0, 0, 0);
-  font-size: 50px;
+  font-size: 60px;
   text-align: center;
   padding-top: 2rem;
   text-transform: capitalize;
@@ -429,6 +429,46 @@ p {
   color: #b9552d;
 }
 
+.boxContact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: center; */
+  min-height: 100vh;
+  padding-bottom: 5rem;
+}
+
+.boxContact .contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  padding-bottom: 5rem;
+}
+
+.boxContact .contact-content .mapcontact {
+  padding: 60px;
+}
+.boxContact .mapcontact h2 {
+  /* display: flex;
+  flex-direction: column; */
+  font-size: 60px;
+  margin-bottom: -10px;
+  font-family: "Poppins", sans-serif;
+  color: rgb(0, 0, 0);
+  text-transform: capitalize;
+  font-weight: 600;
+  font-style: oblique;
+}
+
+.boxContact .mapcontact h2 span {
+  color: #b9552d;
+}
+
+.boxContact .mapcontact .pre p {
+  font-size: 10px;
+}
+
 /* footer */
 footer {
   background-color: #b9552d;
@@ -530,31 +570,6 @@ footer .wave#wave4 {
     background-position-x: 1000px;
   }
 }
-
-.boxEducation {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 100vh;
-  padding-bottom: 5rem;
-}
-
-.boxEducation .contact-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  padding-bottom: 5rem;
-}
-
-.boxEducation .contact-content .mapcontact {
-  padding: 80px;
-}
-/* .boxEducation h2 {
-  display: flex;
-  flex-direction: column;
-} */
 
 .box {
   display: flex;
@@ -679,13 +694,15 @@ footer .wave#wave4 {
 .box form h2 {
   color: #fff;
   font-weight: 500;
-  text-align: center;
+  text-align: start;
   letter-spacing: 0.1em;
 }
 
 .box form hr {
-  width: 84px;
+  width: 100%;
   height: 1px;
+  text-align: start;
+  justify-content: start;
   margin-top: -15px;
   background: #fff;
 }
