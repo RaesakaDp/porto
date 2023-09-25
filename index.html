@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Portfolio</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- link css -->
     <link rel="stylesheet" href="css/style.css" />
-    <title>Portfolio</title>
     <!-- link js -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <!-- icon -->
@@ -18,41 +18,63 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
     />
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
     <!-- Google Font -->
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Passion+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
   </head>
-  <body>
-    <!-- navbar -->
-    <nav class="navbar">
-      <div class="trapezoid">
-        <a class="sub-home" href="#hero">Home</a>
-        <a href="#about" class="expandHome">About</a>
-        <a href="#Education" class="expandHome">Education</a>
-        <a href="#Contact" class="expandHome">Contact</a>
-      </div>
-    </nav>
-    <!-- navbar end -->
 
+  <body>
     <!-- ======= Hero Section ======= -->
-    <section
-      id="hero"
-      class="d-flex flex-column justify-content-center align-items-center"
-    >
-      <div class="hero-container" data-aos="fade-in">
-        <h1>Raesaka Dp</h1>
-        <p>
-          Hi!
-          <span
-            class="typed"
-            data-typed-items="Designer, Developer, Freelancer, Photographer"
-          ></span>
-        </p>
-      </div>
+    <section id="hero" class="d-flex flex-column justify-content-center">
+      <h1>Raesaka Dp</h1>
+      <p>
+        Hi!
+        <span
+          class="typed"
+          data-typed-items="Designer, Developer, Freelancer, Photographer"
+        ></span>
+      </p>
     </section>
     <!-- hero section end -->
+    <!-- navbar -->
+    <header id="header" class="d-flex align-items-center">
+      <div class="container d-flex align-items-center justify-content-between">
+        <div class="logo">
+          <h1><a href="index.html">Saka</a></h1>
+        </div>
+
+        <nav class="navbar" id="navbar">
+          <ul>
+            <li><a href="#hero" class="nav-link scrollto active">Home</a></li>
+            <li><a href="#about" class="nav-link scrollto">About</a></li>
+            <li>
+              <a href="#education" class="nav-link scrollto">Education</a>
+            </li>
+            <li><a href="#contact" class="nav-link scrollto">Contact</a></li>
+          </ul>
+          <div class="navbar-extra">
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- navbar end -->
 
     <!-- About Start -->
     <section class="about" id="about">
@@ -76,8 +98,8 @@
     <!-- About End -->
 
     <!-- Education Start -->
-    <div class="Education" id="Education">
-      <h2>Education</h2>
+    <div class="Education" id="education">
+      <h2><span>Edu</span>cation</h2>
       <hr />
       <div class="main-education" id="overlay">
         <div class="img-container">
@@ -100,55 +122,144 @@
     </div>
     <!-- Education End -->
 
-    <!-- <div class="Contact" id="Contact">
-      <div class="contact-container">
-        <h1>Get in <span>Touch</span></h1>
-        <hr>
-        <div class="contact-main">
-          <div class="isicontact">
-          <form onsubmit="sendEmail(); reset(); return false;">
-            <div class="form-grup">
-              <input type="text" title="name" id="name" placeholder="Your Name" required></input>
-            </div>
-              <div class="form-grup">
-                <input type="email" name="email" id="email" placeholder="Email Id" required>
-              </div>
-              <div class="form-grup">  
-                <textarea name="pesan" id="message" rows="4" placeholder="Your Message"></textarea>
-              </div>
-                <button type="button">Submit</button>
-            <input type="submit" value="submit">
-          </form>
+    <!-- Contact Coba -->
+
+    <section id="Contact" class="contact section-bg">
+      <div class="container">
+        <div class="section-title">
+          <h2>Get In Touch</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+            voluptatem enim blanditiis quasi. Porro ipsum illo officiis error
+            animi? Eum esse dolores culpa architecto debitis nemo aperiam
+            tempora voluptas iusto!
+          </p>
         </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-4">
+            <div class="contact-about">
+              <h3>Let's Talk!</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. At,
+                ab.
+              </p>
+              <div class="social-links">
+                <a href="http://" class="twitter"
+                  ><i class="bi bi-twitter"></i
+                ></a>
+                <a href="http://" class="facebook"
+                  ><i class="bi bi-facebook"></i
+                ></a>
+                <a href="http://" class="instagram"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+                <a href="http://" class="linkedin"
+                  ><i class="bi bi-linkedin"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+              <div class="info">
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-geo-alt"></i>
+                  <p>Pasuruan, Indonesia</p>
+                </div>
+                <div class="d-flex align-items-center mt-4">
+                  <i class="bi bi-envelope"></i>
+                  <p>raesakadwiii@gmail.com</p>
+                </div>
+                <div class="f-flex align-items-center mt-4">
+                  <i class="bi bi-phone"></i>
+                  <p>+6281331428289</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-5 col-md-8">
+              <form action="#" method="post" role="form" class="php-email-form">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="name"
+                    class="form-control"
+                    id="name"
+                    placeholder="Your Name"
+                    required
+                  />
+                </div>
+                <div class="form-group mt-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    name="email"
+                    placeholder="Your Email"
+                    required
+                  />
+                </div>
+                <div class="form-group mt-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="subject"
+                    id="subject"
+                    placeholder="Subject"
+                    required
+                  />
+                </div>
+                <div class="form-group mt-3">
+                  <textarea
+                    name="message"
+                    class="form-control"
+                    rows="5"
+                    placeholder="Message"
+                    required
+                  ></textarea>
+                </div>
+                <div class="text-center">
+                  <button type="submit">Send Message</button>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
-    </div> -->
+    </section>
 
     <!-- coba contact animation -->
-    <div class="boxContact" id="Contact">
-      <div class="contact-content">
+    <!-- <div class="boxContact" id="Contact">
+      <div class="container">
         <div class="mapcontact">
           <h2>Get <span>In</span>Touch!</h2>
+          <hr />
           <div class="pre">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Architecto, neque!
+              Terimakasih telah mengunjungi Portfolio sederhana saya, dan
+              tentunya sebagai manusia tak akan pernah luput dari kesalahan.
+              saran dan masukkan dari teman-teman sangat saya butuhkan untuk
+              menjadi lebih baik lagi.
             </p>
           </div>
-          <div class="info">
-            <div class="d-flex align-items-center">
-              <i class="bi bi-geo-alt"></i>
-              <p>Pasuruan, Indonesia</p>
-            </div>
 
-            <div class="d-flex align-items-center mt-4">
-              <i class="bi bi-envelope"></i>
-              <p>raesakadwiii@gmail.com</p>
-            </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 py-5">
+              <div class="info">
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-geo-alt"></i>
+                  <p>Pasuruan, Indonesia</p>
+                </div>
 
-            <div class="d-flex align-items-center mt-4">
-              <i class="bi bi-phone"></i>
-              <p>+6281331428289</p>
+                <div class="d-flex align-items-center mt-4 py-5">
+                  <i class="bi bi-envelope"></i>
+                  <p>raesakadwiii@gmail.com</p>
+                </div>
+
+                <div class="d-flex align-items-center mt-4 py-5">
+                  <i class="bi bi-phone"></i>
+                  <p>+6281331428289</p>
+                </div>
+              </div>
             </div>
           </div>
           <div class="social-links">
@@ -158,34 +269,36 @@
             <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
-        <div class="box">
-          <span class="borderline"></span>
-          <form>
-            <h2>Send Message</h2>
-            <!-- <hr /> -->
-            <div class="inputBox">
-              <input type="text" name="nama" required="required" />
-              <span>Your Name</span>
-              <i></i>
-            </div>
-            <div class="inputBox">
-              <input type="text" name="email" required="required" />
-              <span>Email id</span>
-              <i></i>
-            </div>
-            <div class="inputBox">
-              <textarea name="pesan" type="text"></textarea>
-              <span>Your Message</span>
-              <i></i>
-            </div>
-            <input type="submit" value="Submit" />
-          </form>
+
+        <div class="col-lg-6 col-md-6">
+          <div class="box">
+            <span class="borderline"></span>
+            <form>
+              <h2>Send Message</h2>
+              <hr /> -->
+    <!-- <div class="inputBox">
+                <input type="text" name="nama" required="required" />
+                <span>Your Name</span>
+                <i></i>
+              </div>
+              <div class="inputBox">
+                <input type="text" name="email" required="required" />
+                <span>Email id</span>
+                <i></i>
+              </div>
+              <div class="inputBox">
+                <textarea name="pesan" type="text"></textarea>
+                <span>Your Message</span>
+                <i></i>
+              </div>
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
         </div>
       </div>
-    </div>
+    </div>  -->
     <!-- coba contact animation -->
-
-    <footer>
+    <!-- <footer>
       <div class="contactsosmed">
         <div class="waves">
           <div class="wave" id="wave1"></div>
@@ -226,7 +339,7 @@
           >
         </p>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- Iconsosmed -->
     <script
@@ -239,6 +352,10 @@
     ></script>
     <!-- Form To Gmail -->
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <!-- JS Files -->
+    <script src="js/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap/js/glightbox.min.js"></script>
 
     <!-- link js panggil -->
     <script src="js/script.js"></script>
