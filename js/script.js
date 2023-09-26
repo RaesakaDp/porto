@@ -30,14 +30,14 @@
   /**
    * Easy On Scroll event Listener
    */
-  constonscroll = (el, listener) => {
+  const onscroll = (el, listener) => {
     el.addEventListener("scroll", listener);
   };
 
   /**
    * Navbar link active state on scroll
    */
-  let navbarlinks = selectEl("#navbar .scrollto", true);
+  let navbarlinks = select("#navbar .scrollto", true);
   const navbarlinksActive = () => {
     let position = window.scrollY + 200;
     navbarlinks.forEach((navbarlink) => {
@@ -94,7 +94,7 @@
     window.addEventListener("load", headerFixed);
     onscroll(document, headerFixed);
   }
-});
+})();
 
 /**
  * Hero type effect
