@@ -94,23 +94,34 @@
     window.addEventListener("load", headerFixed);
     onscroll(document, headerFixed);
   }
-})();
 
-/**
- * Hero type effect
- */
-// const typed = select(".typed");
-// if (typed) {
-//   let typed_strings = typed.getAttribute("data-typed-items");
-//   typed_strings = typed_strings.split(",");
-//   new Typed(".typed", {
-//     strings: typed_strings,
-//     loop: true,
-//     typeSpeed: 100,
-//     backSpeed: 50,
-//     backDelay: 2000,
-//   });
-// }
+  /**
+   * Scroll with ofset on page load with hash links in the url
+   */
+  window.addEventListener("load", () => {
+    if (window.location.hash) {
+      if (select(window.location.hash)) {
+        scrollto(window.location.hash);
+      }
+    }
+  });
+
+  /**
+   * Hero type effect
+   */
+  const typed = select(".typed");
+  if (typed) {
+    let typed_strings = typed.getAttribute("data-typed-items");
+    typed_strings = typed_strings.split(",");
+    new Typed(".typed", {
+      strings: typed_strings,
+      loop: true,
+      typeSpeed: 100,
+      backSpeed: 50,
+      backDelay: 2000,
+    });
+  }
+})();
 
 // // Education overlay
 // function on() {

@@ -106,7 +106,7 @@ h6 {
   line-height: 0;
   margin-left: 5px;
 }
-/*
+
 .navbar a:hover {
   color: var(--primary);
 }
@@ -121,7 +121,7 @@ h6 {
 
 .navbar a:hover::after {
   transform: scaleX(0.5);
-} */
+}
 
 .navbar .active,
 .navbar .active:focus {
@@ -137,6 +137,12 @@ h6 {
   background: url("../img/bg-baru.jpg") top center;
   background-size: cover;
   padding: 0 15px;
+}
+
+#hero .hero-container {
+  position: relative;
+  z-index: 2;
+  min-width: 300px;
 }
 
 #hero h1 {
@@ -155,6 +161,15 @@ h6 {
   font-size: 26px;
   font-family: "Poppins", sans-serif;
   padding-left: 10rem;
+}
+
+#hero p span {
+  color: #fff;
+  padding-bottom: 4px;
+  letter-spacing: 1px;
+  font-size: 26px;
+  font-family: "Poppins", sans-serif;
+  border-bottom: 3px solid var(--primary);
 }
 
 @media (min-width: 1024px) {
@@ -177,6 +192,10 @@ h6 {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
+  }
+
+  #hero p span {
+    font-size: 18px;
   }
 }
 
@@ -569,9 +588,6 @@ h6 {
 .contact .info p {
   font-size: 14px;
   margin: 0;
-}
-
-.contact .php-email-form .error-message {
 }
 
 /* ==================================
