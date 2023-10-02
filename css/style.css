@@ -107,35 +107,31 @@ h6 {
   margin-left: 5px;
 }
 
-.navbar a:hover {
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover > a {
   color: var(--primary);
 }
-.navbar a::after {
+
+/* .navbar a::after {
   content: "";
   display: block;
   padding-bottom: 0.5rem;
   border-bottom: 0.1rem solid var(--primary);
   transition: 0.2s linear;
   transform: scale(0);
-}
-
+} */
+/* 
 .navbar a:hover::after {
   transform: scaleX(0.5);
-}
+} */
 
-.navbar .active,
-.navbar .active:focus {
-  color: var(--primary);
-}
-
-/* 
-  Mobile Navigation
-*/
 .mobile-nav-toggle {
-  color: var(--bg);
+  display: none;
+  color: #fff;
   font-size: 28px;
   cursor: pointer;
-  display: none;
   line-height: 0;
   transition: 0.5s;
 }
@@ -144,6 +140,9 @@ h6 {
   color: #fff;
 }
 
+/** ====================
+ # Mobile Navigation view
+ =====================*/
 .navbar-mobile {
   position: fixed;
   overflow: hidden;
@@ -176,6 +175,24 @@ h6 {
   transition: 0.3s;
 }
 
+.navbar-mobile a,
+.navbar-mobile a:focus {
+  padding: 10px 20px;
+  font-size: 15px;
+  color: #fff;
+}
+
+.navbar-mobile a:hover,
+.navbar-mobile .active,
+.navbar-mobile li:hover > a {
+  color: var(--primary);
+}
+
+.navbar-mobile .getstarted,
+.navbar-mobile .getstarted:focus {
+  margin: 15px;
+}
+
 /* -----------------------------------
 # Hero Section 
 ------------------------------------*/
@@ -185,7 +202,7 @@ h6 {
   background-size: cover;
   background-position: center;
   padding: 0 15px;
-  position: relative;
+  /* position: relative; */
 }
 
 #hero .hero-container {
