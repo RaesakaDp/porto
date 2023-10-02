@@ -270,6 +270,38 @@ h6 {
 /* ================================= 
 # About 
 ==================================*/
+
+.about .content {
+  padding: 30px 0;
+}
+
+.about .content h3 {
+  color: var(--primary);
+  font-size: 60px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-style: oblique;
+}
+
+.about .content p {
+  margin-bottom: 0;
+  color: rgba(70, 70, 70, 0.8);
+  letter-spacing: 1px;
+  line-height: 20px;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.about .image {
+  background: url(../img/bil.jpg) center center no-repeat;
+  background-size: cover;
+  min-height: 400px;
+  border-radius: 10px;
+}
+
+/* Diatas Lonely code */
+
 .about {
   width: 100%;
   padding: 90px 0px;
