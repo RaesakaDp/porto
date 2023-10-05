@@ -114,11 +114,18 @@
   /**
    * Mobile Nav Toggle
    */
-  on("click", ".mobile-nav-toggle", function (e) {
-    select("#navbar").classList.toggle("..navbar-mobile");
-    this.classList.toggle("bi-list");
-    this.classList.toggle("bi-x");
-  });
+  const nmobile = document.querySelector(".navbar");
+
+  document.querySelector("#nav-mobile").onclick = () => {
+    nmobile.classList.toggle("active");
+  }
+
+
+  // on("click", ".mobile-nav-toggle", function (e) {
+  //   select("#navbar").classList.toggle(".navbar-mobile");
+  //   this.classList.toggle("bi-list");
+  //   this.classList.toggle("bi-x");
+  // });
 
   /**
    * Scrool with ofset on links with a class name .scrollto
@@ -131,8 +138,8 @@
         e.preventDefault();
 
         let navbar = select("#navbar");
-        if (navbar.classList.contains(".navbar-mobile")) {
-          navbar.classList.remove(".navbar-mobile");
+        if (navbar.classList.contains("navbar-mobile")) {
+          navbar.classList.remove("navbar-mobile");
           let navbarToggle = select(".mobile-nav-toggle");
           navbarToggle.classList.toggle("bi-list");
           navbarToggle.classList.toggle("bi-x");

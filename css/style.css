@@ -1,11 +1,15 @@
 :root {
   --primary: #b9552d;
   --bg: #010101;
+  --basic: #c4c4c4;
+  --bg-3: linear-gradient(180deg, #f2f6f9 0%, #fff 100%);
+  --font: rgba(70, 70, 70, 0.8);
 }
 
 html {
   scroll-behavior: smooth;
   max-width: 2560px;
+  color: var(--bg);
 }
 
 body {
@@ -72,6 +76,9 @@ h6 {
 /* ------------------------------
 # Navbar 
 -------------------------------*/
+/* *
+    Desktop Navigation
+*/
 .navbar {
   padding: 0;
 }
@@ -127,6 +134,10 @@ h6 {
   transform: scaleX(0.5);
 } */
 
+/** ====================
+ # Mobile Navigation view
+ =====================*/
+
 .mobile-nav-toggle {
   display: none;
   color: #fff;
@@ -140,9 +151,16 @@ h6 {
   color: #fff;
 }
 
-/** ====================
- # Mobile Navigation view
- =====================*/
+/* @media (max-width: 991px) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+} */
+
 .navbar-mobile {
   position: fixed;
   overflow: hidden;
@@ -150,7 +168,7 @@ h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(13, 21, 29, 0.6);
+  background: rgba(13, 21, 29, 0.795);
   transition: 0.3s;
   z-index: 998;
 }
@@ -268,6 +286,46 @@ h6 {
 } */
 
 /* ================================= 
+# Section General 
+==================================*/
+
+section {
+  padding: 60px 0;
+}
+
+.section-bg {
+  background: var(--bg-3);
+}
+
+.section-title {
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  position: relative;
+  color: var(--primary);
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--basic);
+  bottom: 0;
+  left: 0;
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+/* ================================= 
 # About 
 ==================================*/
 
@@ -286,7 +344,7 @@ h6 {
 
 .about .content p {
   margin-bottom: 0;
-  color: rgba(70, 70, 70, 0.8);
+  color: var(--font);
   letter-spacing: 1px;
   line-height: 20px;
   text-align: justify;
@@ -301,13 +359,6 @@ h6 {
 }
 
 /* Diatas Lonely code */
-
-.about {
-  width: 100%;
-  padding: 90px 0px;
-  /* background-color: rgb(255, 255, 255); */
-}
-
 .about img {
   height: auto;
   width: 400px;
@@ -362,6 +413,69 @@ h6 {
 # Gallery img Education Start 
 =====================================*/
 
+/* Gallery Hover card */
+/* .education .row {
+  position: relative;
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+} */
+
+.row .edu-card {
+  position: relative;
+  max-width: 300px;
+  height: 215px;
+  background-color: #fff;
+  margin: 30px 10px;
+  padding: 20px 15px;
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+
+.row .edu-card:hover {
+  height: 420px;
+}
+
+.row .edu-card .img-box {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  top: -60px;
+  left: 20px;
+  z-index: 1;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0, 5);
+}
+
+.row .edu-card .img-box img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.row .edu-card .edu-content {
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  color: var(--bg);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.row .edu-card:hover .edu-content {
+  opacity: 1;
+  visibility: visible;
+  margin-top: -40px;
+  transition-delay: 0.3s;
+}
+
+/* Pertama */
 .Education {
   background-color: #d6d4d4;
   height: 40rem;
@@ -1036,5 +1150,16 @@ footer .wave#wave4 {
 
   .navbar ul {
     display: none;
+  }
+
+  .about .content h3 {
+    padding: 8px;
+    margin: 10px;
+  }
+
+  .about .content p {
+    font-size: 18px;
+    padding: 5px;
+    margin: 10px;
   }
 }
