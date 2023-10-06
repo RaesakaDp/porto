@@ -190,7 +190,7 @@ h6 {
   border-radius: 10px;
   background-color: #fff;
   overflow-y: auto;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
 .navbar-mobile a,
@@ -424,18 +424,30 @@ section {
   padding: 30px;
 } */
 
+.education {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 30px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+
 .row .edu-card {
   position: relative;
-  max-width: 300px;
-  height: 215px;
-  background-color: #fff;
+  max-width: 330px;
+  height: 250px;
+  background-color: #dddddd;
   margin: 30px 10px;
   padding: 20px 15px;
   display: flex;
-  flex-wrap: wrap;
-  /* flex-direction: column; */
-  box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
-  transition: 0.3s ease-in-out;
+  flex-direction: column;
+  /* box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5); */
+  transition: 0.5s ease;
 }
 
 .row .edu-card:hover {
@@ -444,6 +456,8 @@ section {
 
 .row .edu-card .img-box {
   position: relative;
+  align-items: center;
+  justify-content: center;
   width: 260px;
   height: 260px;
   top: -60px;
@@ -457,6 +471,11 @@ section {
   border-radius: 4px;
 }
 
+.row .edu-card .img-box img:hover {
+  transform: translateY(5%);
+  transition: 0.5s ease-in-out;
+}
+
 .row .edu-card .edu-content {
   position: relative;
   margin-top: -140px;
@@ -465,14 +484,14 @@ section {
   color: var(--bg);
   visibility: hidden;
   opacity: 0;
-  transition: 0.3s ease-in-out;
+  transition: 0.5s ease;
 }
 
 .row .edu-card:hover .edu-content {
   opacity: 1;
   visibility: visible;
-  margin-top: -40px;
-  transition-delay: 0.3s;
+  margin-top: -20px;
+  transition-delay: 0.5s ease;
 }
 
 /* Pertama */
