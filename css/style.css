@@ -413,112 +413,68 @@ section {
 /* ==================================== 
 # Gallery img Education Start 
 =====================================*/
-
-.education .container {
-  display: grid;
-  place-items: center;
-  margin-inline: 1.5rem;
-  padding-block: 5rem;
-}
-
-.education .card-container {
-  display: grid;
-  row-gap: 3.5rem;
-}
-
-.card-article {
+.row {
   position: relative;
-  overflow: hidden;
+  width: 1100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+  padding-bottom: 5rem;
 }
 
-.card-image {
-  width: 328px;
-  border-radius: 1.5rem;
+.row .edu-card {
+  position: relative;
+  max-width: 300px;
+  height: 215px;
+  background-color: #fff;
+  margin: 20px 20px;
+  padding: 20px 35px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s ease;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+}
+.row .edu-card:hover {
+  height: 420px;
+  /* transition: 0.5 ease; */
 }
 
-.card-data {
-  width: 280px;
-  background-color: var(--basic);
-  padding: 1.5rem 2rem;
-  box-shadow: 0 8px 24px hsla(0, 0%, 0%, 0.15);
-  border-radius: 1rem;
-  position: absolute;
-  bottom: -9rem;
-  left: 0;
-  right: 0;
-  margin-inline: auto;
+.row .edu-card .img-box {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  top: -60px;
+  left: 3px;
+  z-index: 1;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.row .edu-card .img-box img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.row .edu-card .edu-content {
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  color: var(--font);
+  visibility: hidden;
   opacity: 0;
-  transition: opacity 1s 1s;
+  transition: 0.5 ease-in-out;
 }
 
-.card-desc {
-  display: block;
-  font-size: small;
-  margin-bottom: 0.25rem;
-}
-
-.card-title {
-  font-size: medium;
-  font-weight: 500;
-  color: var(--primary);
-  margin-bottom: 0.75rem;
-}
-
-.card-article:hover .card-data {
-  animation: show-data 1s forwards;
+.row .edu-card:hover .edu-content {
+  visibility: visible;
   opacity: 1;
-  transition: opacity 0.3s;
+  margin-top: -40px;
+  transition-delay: 0.3s;
 }
-
-.card-article:hover {
-  animation: remove-overflow 2s forwards;
-}
-
-.card-article:not(:hover) {
-  animation: show-overflow 2s forwards;
-}
-
-.card-article:not(:hover) .card-data {
-  animation: remove-data 1s forwards;
-}
-
-@keyframes show-data {
-  50% {
-    transform: translateY(-10rem);
-  }
-  100% {
-    transform: translateY(-7rem);
-  }
-}
-
-@keyframes remove-overflow {
-  to {
-    overflow: initial;
-  }
-}
-
-@keyframes remove-data {
-  0% {
-    transform: translateY(-7rem);
-  }
-  50% {
-    transform: translateY(-10rem);
-  }
-  100% {
-    transform: translateY(0.5rem);
-  }
-}
-
-@keyframes show-overflow {
-  0% {
-    overflow: initial;
-    pointer-events: none;
-  }
-  50% {
-    overflow: hidden;
-  }
-}
-
 /* =========================================
 # Contact Start 
 ==========================================*/
