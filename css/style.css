@@ -1027,6 +1027,8 @@ footer .wave#wave4 {
 
   .about .row .content p {
     columns: 15px 2;
+    column-gap: 10px;
+    text-align: left;
   }
 
   .mobile-nav-toggle {
