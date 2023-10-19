@@ -415,7 +415,7 @@ section {
 =====================================*/
 .row {
   position: relative;
-  width: 1100px;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -424,7 +424,7 @@ section {
   padding-bottom: 5rem;
 }
 
-.row .edu-card {
+.row .edu-card-1 {
   position: relative;
   max-width: 300px;
   height: 215px;
@@ -437,12 +437,71 @@ section {
   border-radius: 10px;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
 }
-.row .edu-card:hover {
+
+.row .edu-card-2 {
+  position: relative;
+  max-width: 300px;
+  height: 215px;
+  background-color: #fff;
+  margin: 20px 20px;
+  padding: 20px 35px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s ease;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.row .edu-card-3 {
+  position: relative;
+  max-width: 300px;
+  height: 215px;
+  background-color: #fff;
+  margin: 20px 20px;
+  padding: 20px 35px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s ease;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.row .edu-card-1:hover {
   height: 420px;
   /* transition: 0.5 ease; */
 }
 
-.row .edu-card .img-box {
+.row .edu-card-2:hover {
+  height: 420px;
+  /* transition: 0.5 ease; */
+}
+
+.row .edu-card-3:hover {
+  height: 420px;
+  /* transition: 0.5 ease; */
+}
+
+.row .edu-card-1 .img-box {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  top: -60px;
+  left: 3px;
+  z-index: 1;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+.row .edu-card-2 .img-box {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  top: -60px;
+  left: 3px;
+  z-index: 1;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+.row .edu-card-3 .img-box {
   position: relative;
   width: 200px;
   height: 200px;
@@ -453,12 +512,42 @@ section {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
 }
 
-.row .edu-card .img-box img {
+.row .edu-card-1 .img-box img {
   max-width: 100%;
   border-radius: 4px;
 }
 
-.row .edu-card .edu-content {
+.row .edu-card-2 .img-box img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.row .edu-card-3 .img-box img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.row .edu-card-1 .edu-content {
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  color: var(--font);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5 ease-in-out;
+}
+.row .edu-card-2 .edu-content {
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  color: var(--font);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5 ease-in-out;
+}
+.row .edu-card-3 .edu-content {
   position: relative;
   margin-top: -140px;
   padding: 10px 15px;
@@ -469,7 +558,19 @@ section {
   transition: 0.5 ease-in-out;
 }
 
-.row .edu-card:hover .edu-content {
+.row .edu-card-1:hover .edu-content {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.3s;
+}
+.row .edu-card-2:hover .edu-content {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.3s;
+}
+.row .edu-card-3:hover .edu-content {
   visibility: visible;
   opacity: 1;
   margin-top: -40px;
