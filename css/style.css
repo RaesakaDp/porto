@@ -1025,6 +1025,10 @@ footer .wave#wave4 {
     font-size: 62.5%;
   }
 
+  .about .row .content p {
+    columns: 15px 2;
+  }
+
   .mobile-nav-toggle {
     display: block;
   }
