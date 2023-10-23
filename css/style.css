@@ -584,7 +584,7 @@ section {
 ==========================================*/
 
 .contact {
-  height: 680px;
+  height: 700px;
 }
 
 .contact .section-title h2 {
@@ -811,12 +811,6 @@ footer .wave#wave4 {
     font-size: 62.5%;
   }
 
-  body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-
   #hero h1 {
     font-size: 28px;
     line-height: 36px;
@@ -866,12 +860,17 @@ footer .wave#wave4 {
   }
 }
 
+/* Handphone */
 @media (max-width: 425px) {
   .contact {
     height: 1300px;
   }
 
   .contact .php-email-form {
-    padding: 20px;
+    margin-top: 30px;
+  }
+  #hero {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
 }
