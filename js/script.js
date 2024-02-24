@@ -114,17 +114,22 @@
   /**
    * Mobile Nav Toggle
    */
-  // const nmobile = document.querySelector(".navbar");
-
-  // document.querySelector("#nav-mobile").onclick = () => {
-  //   nmobile.classList.toggle("active");
-  // };
-
   on("click", ".mobile-nav-toggle", function (e) {
-    select("#navbar").classList.toggle("navbar-mobile");
+    select("#navbar").classList.toggle(".navbar-mobile");
     this.classList.toggle("bi-list");
     this.classList.toggle("bi-x");
   });
+
+  // document
+  //   .getElementById("navbarToggleBtn")
+  //   .addEventListener("click", function () {
+  //     var navbarNav = document.getElementById("navbarNav");
+  //     if (navbarNav.classList.contains("show")) {
+  //       navbarNav.classList.remove("show");
+  //     } else {
+  //       navbarNav.classList.add("show");
+  //     }
+  //   });
 
   /**
    * Mobile nav dropdowns activate

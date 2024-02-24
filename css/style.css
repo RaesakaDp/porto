@@ -201,6 +201,7 @@ h6 {
   display: none;
   line-height: 0;
   transition: 0.5s;
+  z-index: 9998;
 }
 
 .mobile-nav-toggle.bi-x {
