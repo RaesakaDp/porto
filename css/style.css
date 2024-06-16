@@ -482,14 +482,14 @@ section {
 }
 
 .row .edu-card:hover {
-  height: 260px;
+  height: 250px;
   /* transition: 0.5 ease; */
 }
 
 .row .edu-card .img-box {
   position: relative;
   width: 198px;
-  height: 198px;
+  /* height: 190px; */
   top: -60px;
   left: 3px;
   z-index: 1;
