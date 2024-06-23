@@ -59,11 +59,33 @@
           <li><a href="education-copy">Education</a></li>
           <li><a href="contact-copy">Contact</a></li>          
         </ul>
-        <div class="toogle_btn"> 
+        <div class="toggle_btn"> 
       <i class="fa-solid fa-bars"></i>
         </div>
       </div>
+
+      <div class="copy-dropdown_menu">
+        <li><a href="hero-copy">Home</a></li>
+          <li><a href="about-copy">About</a></li>
+          <li><a href="education-copy">Education</a></li>
+          <li><a href="contact-copy">Contact</a></li>
+      </div>
     </header>
+
+    <script>
+      const toggleBtn = document.querySelector('.toggle_btn')
+      const toggleBtnIcon = document.querySelector('.toggle_btn i')
+      const dropDownMenu = document.querySelector('.copy-dropdown_menu')
+    
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+
+        toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+      }
+    </script>
     <!-- navbar end -->
 
     <!-- ======= Hero Section ======= -->

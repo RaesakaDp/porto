@@ -120,11 +120,42 @@ header{
   gap: 2rem;
 }
 
-.navbar-copy .toogle_btn{
+.navbar-copy .toggle_btn{
   color: #111;
-  font-family: 2rem;
+  font-family: 3rem;
   cursor: pointer;
   display: none;
+}
+
+/* Dropdown menu Responsive */
+.copy-dropdown_menu{
+  display: none;
+  position: absolute;
+  right: 2rem;
+  top: 40px;
+  width: 300px;
+  height: 0;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.copy-dropdown_menu li{
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copy-dropdown_menu .action_btn{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.copy-dropdown_menu.open{
+  height: 240px;
 }
 
 
@@ -812,9 +843,15 @@ footer .wave#wave4 {
 
   .navbar-copy .links-copy{
     display: none;
+    position: fixed;
   }
 
-  .navbar-copy .toogle_btn{
+  .navbar-copy .toggle_btn{
+    display: block;
+    font-size: 2rem;
+  }
+
+  .copy-dropdown_menu{
     display: block;
   }
 
@@ -912,6 +949,12 @@ footer .wave#wave4 {
 
 /* Handphone */
 @media (max-width: 425px) {
+
+  .copy-dropdown_menu{
+    left: 2rem;
+    width: unset;
+  }
+
   .contact {
     height: 1300px;
   }
