@@ -135,10 +135,27 @@ header{
   top: 40px;
   width: 300px;
   height: 0;
-  background: rgba(255, 255, 255, 0.5);
+  /* background: rgba(255, 255, 255, 0.5); */
+  background: #111;
   border-radius: 10px;
   overflow: hidden;
   transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.copy-dropdown_menu li{
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+.copy-dropdown_menu a{
+  text-decoration: none;
+  color: #b9552d;
+  font-size: 1.5rem;
+  padding-top: 0.5rem;
+  /* align-items: center;
+  justify-content: space-between; */
+
 }
 
 .copy-dropdown_menu li{
@@ -146,6 +163,8 @@ header{
   display: flex;
   align-items: center;
   justify-content: center;
+  list-style: none;
+  text-decoration: none;
 }
 
 .copy-dropdown_menu .action_btn{
@@ -843,7 +862,6 @@ footer .wave#wave4 {
 
   .navbar-copy .links-copy{
     display: none;
-    position: fixed;
   }
 
   .navbar-copy .toggle_btn{
