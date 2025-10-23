@@ -1,330 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Portfolio</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Raesaka</title>
 
-    <!-- link css -->
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
 
-    <!-- link js -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-
-    <!-- icon -->
-    <script src="https://unpkg.com/feather-icons"></script>
-    <script
-      src="https://kit.fontawesome.com/6cbf6d93a4.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
-    />
-    <!-- Google Font -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Passion+One&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-
-    <!-- Vendor -->
-    <link rel="stylesheet" href="js/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="js/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="js/bootstrap-icons/bootstrap-icons.css">
-
-    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- Font & Icons -->
+    <script src="https://kit.fontawesome.com/6cbf6d93a4.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
   </head>
 
   <body>
-    <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex flex-column justify-content-center">
-      <div class="hero-container" data-aos="fade-in">
-        <h1>Raesaka Dp</h1>
-        <p>
-          Hi,
-          <span
-            class="typed"
-            data-typed-items="Welcome, Enjoy, And, Thanks You, Have a Nice Day!"
-          ></span>
-        </p>
-      </div>
-    </section>
-    <!-- hero section end -->
 
-    <!-- === Navbar Start === -->
-    <header id="header" class="d-flex align-items-center">
-      <div class="container d-flex align-items-center justify-content-between">
+    <!-- ===== NAVBAR ===== -->
+    <header>
+      <nav class="navbar">
+        <div class="logo"><a href="#hero">RDP</a></div>
 
-        <div class="logo">
-          <h1><a href="index.html">Saka</a></h1>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+        <div class="theme-toggle">
+            <i class="fa-solid fa-moon"></i>
         </div>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        </div>
+      </nav>
 
-    <nav id="navbar" class="navbar">
-          <!-- <ion-icon name="close-outline" class="close-nav-toggle"></ion-icon> -->
-          <ul>
-            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-            <li><a class="nav-link scrollto" href="#about">About</a></li>
-            <li><a class="nav-link scrollto" href="#education">Education</a></li>
-            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-            <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-              <ul>
-                <li><a href="#">Drop Down 1</a></li>
-                <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                  <ul>
-                    <li><a href="#">Deep Drop Down 1</a></li>
-                    <li><a href="#">Deep Drop Down 2</a></li>
-                    <li><a href="#">Deep Drop Down 3</a></li>
-                    <li><a href="#">Deep Drop Down 4</a></li>
-                    <li><a href="#">Deep Drop Down 5</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Drop Down 2</a></li>
-                <li><a href="#">Drop Down 3</a></li>
-                <li><a href="#">Drop Down 4</a></li>
-              </ul>
-            </li> -->
-          </ul>
-          <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav>
-        <!-- <ion-icon name="menu-outline" class="menu-nav-toggle"></ion-icon> -->
+      <!-- Dropdown Menu (Mobile) -->
+      <div class="dropdown_menu">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
       </div>
     </header>
-    <!-- navbar end -->
 
-    <div id="main">
-      <!-- ========== About Section ====================-->
-      <section id="about" class="about section-bg">
-        <div class="container">
-          <div class="row no-gutters">
-            <div
-              class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start"
-            ></div>
-            <div
-              class="col-xl-7 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch"
-            >
-              <div class="content d-flex flex-column justify-content-center">
-                <h3>About Me</h3>
-                <p>
-                  Hi, Most people call me
-                  <span style="color: rgba(253, 101, 0, 0.637)">Saka</span>. I
-                  graduated from SMKN Software Engineering Department. I started
-                  to be interested in web development from mid-2021 and started
-                  learning other programming languages such as CSS, PHP, Dart,
-                  Java and so on. And this is one of the projects that I work on
-                  outside of school learning. And now i'am adalah swimming coach
-                  in Avatar Swimming Club at Pasuruan.
-                </p>
-              </div>
+    <!-- ===== HERO ===== -->
+    <section id="hero" class="hero reveal">
+        <div class="hero-content">
+            <img src="img/profile.jpg" alt="Profile Photo" class="profile-pic">
+
+            <h1>Hi, I'm 
+                <span class="highlight">Saka</span>
+            </h1>
+            <h2>
+                <span class="typing"></span>
+            </h2>
+
+            <p> Welcome to my personal Portfolio website.</p>
+
+            <div class="hero-bottons">
+                <a href="#about" class="btn">About Me</a>
+                <a href="#contact" class="btn btn-outline"> Contact</a>
             </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT ====== -->
+    <section id="about" class="about-modern reveal">
+        <div class="about-container">
+
+          <div class="about-image" id="tilt-card" data-speed="0.25">
+            <div class="glow"></div>
+            <img src="img/about.jpg" alt="About image">
+          </div>
+
+          <div class="about-text">
+            <h2>About Me</h2>
+            <p>Halo! Saya <strong>Raesaka Dp</strong>, seorang <strong>mahasiswa Universitas Negeri Malang</strong> yang bersemangat dalam dunia teknologi dan olahraga. Saat ini saya juga aktif sebagai <strong>pelatih renang di Avatar Swimming Club</strong>, membantu para atlet muda meningkatkan kemampuan mereka lewat latihan yang menyenangkan dan terstruktur.</p>
+            <p>Saya percaya bahwa pemrograman dan renang punya kesamaan: keduanya membutuhkan ritme, konsistensi, dan kreativitas. Itulah yang membuat saya terus berkembang — baik di kolam renang maupun di depan layar laptop.</p>
+            
+            <div class="badges">
+              <span class="badge"><i class="fa-solid fa-code"></i> Web Developer</span>
+              <span class="badge"><i class="fa-solid fa-person-swimming"></i> Swim Coach</span>
+              <span class="badge"><i class="fa-solid fa-graduation-cap"></i> Mahasiswa UM</span>
+            </div>
+
+            <div class="about-buttons">
+              <a href="#education" class="btn">My Education</a>
+              <a href="#contact" class="btn btn-outline">Let's Connect</a>
+            </div>
+
           </div>
         </div>
       </section>
 
-      <!-- About Hover Card -->
-      <section id="education" class="education section-bg">
-        <div class="container">
-          <div class="section-title">
-           <h2>Education</h2>
-          </div>
+    <!-- ===== EDUCATION ===== -->
+    <section id="education" class="section reveal">
+      <h2>Education</h2>
+      <ul>
+        <li>SMP Negeri 2 Pasuruan (2017–2020)</li>
+        <li>SMK Negeri 1 Pasuruan (2020–2023)</li>
+        <li>Universitas Negeri Malang (2024–Now)</li>
+    </ul>
+    </section>
 
-          <div class="row">
-            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-              <div class="edu-card">
-                  <div class="img-box">
-                    <img src="./img/640-sak.JPG" alt="image education">
-                  </div>
-                <div class="edu-content">
-                  <h2>2011-2017</h2>
-                  <p>SD Negeri Kandang Sapi 2</p>
-                </div>
-              </div>
-            </div>
-           
-            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-              <div class="edu-card">
-                <div class="img-box">
-                    <img src="./img/640-sak.JPG" alt="">
-                </div>
-                <div class="edu-content">
-                  <h2>2017-2020</h2>
-                  <p>SMP Negeri 2 Pasuruan</p>
-                </div>
-              </div>
-            </div>
-              
-              <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                <div class="edu-card">
-                  <div class="img-box">
-                    <img src="./img/640-sak.JPG" alt="">
-                  </div>
-                  <div class="edu-content">
-                    <h2>2020-2023</h2>
-                    <p>SMK Negeri 1 Pasuruan</p>
-                  </div>
-                </div>
-              </div>
-          </div>
-        </div> 
-      </section>
-      <!-- About End -->
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section reveal">
+      <h2>Contact</h2>
+      <p>Email: raesakadwiii@gmail.com</p>
+      <p>Instagram: <a href="https://instagram.com/kakasugus_">@kakasugus_</a></p>
+    </section>
 
-      <!-- Contact -->
-      <section id="contact" class="contact section-bg">
-        <div class="container">
-
-          <div class="section-title">
-            <h2>Contact</h2>
-            <p>Thank you for visiting my website portfolio, and
-              Of course, as humans we will never escape from mistakes.
-              I really need suggestions and input from friends
-              be better.</p>
-
-              <div class="row">
-                <div class="col-lg-4 col-md-4">
-                  <div class="contact-about">
-                    <h3>SAKA</h3>
-                    <p>Hi, Most people call me
-                      <span style="color: rgba(253, 101, 0, 0.637)">Saka</span>. I
-                      graduated from SMKN Software Engineering Department. I started
-                      to be interested in web development from mid-2021 and started
-                      learning other programming languages such as CSS, PHP, Dart,
-                      Java and so on. And this is one of the projects that I work on
-                      outside of school learning.</p>
-                    <div class="social-links">
-                      <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-                      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                      <a href="#" class="github"><i class="bi bi-github"></i></a>
-                      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4">
-                  <div class="info">
-                    <div class="d-flex align-items-center">
-                      <i class="bi bi-geo-alt"></i>
-                      <p>Pasuruan, Jawa Timur <br> Indonesia</p>
-                    </div>  
-                    <div class="d-flex align-items-center mt-4">
-                      <i class="bi bi-envelope"></i>
-                      <p>raesakadwiii@gmail.com</p>
-                    </div>  
-                    <div class="d-flex align-items-center mt-4">
-                      <i class="bi bi-phone"></i>
-                      <p>081331428289</p>
-                    </div>  
-
-                  </div>
-                </div>
-
-                <div class="col-lg-5 col-md-8">
-                  <form action="#" method="post" role="form" class="php-email-form">
-                    <div class="form-group">
-                      <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group mt-3">
-                      <input type="email" name="email" id="email" class="form-control" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group mt-3">
-                      <input type="text" name="subject" id="email" class="form-control" placeholder="Subject" required>
-                    </div>
-                    <div class="form-group mt-3">
-                      <textarea class="form-control" name="message" rows="5" placeholder="Message" required ></textarea>
-                    </div>
-                    <div class="text-center">
-                      <button type="submit">Send Message</button>
-                    </div>
-                  </form>
-                </div>
-              </div>
-          </div>
-        </div>
-      </section>
-
-      
-<!-- Footer -->
-
+    <!-- ===== FOOTER ===== -->
     <footer>
-      <div class="contactsosmed">
-        <div class="waves">
-          <div class="wave" id="wave1"></div>
-          <div class="wave" id="wave2"></div>
-          <div class="wave" id="wave3"></div>
-          <div class="wave" id="wave4"></div>
-        </div>
-        <ul class="sosmed">
-          <li>
-            <a href="http://www.instagram.com/kakasugus_"
-              ><ion-icon name="logo-instagram"></ion-icon
-            ></a>
-          </li>
-          <li>
-            <a href="https://www.twitter.com/raesakadp"
-              ><ion-icon name="logo-twitter"></ion-icon
-            ></a>
-          </li>
-          <li>
-            <a href="https://github.com/RaesakaDp"
-              ><ion-icon name="logo-github"></ion-icon
-            ></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/raesaka-shelby-91b49628a/"
-              ><ion-icon name="logo-linkedin"></ion-icon
-            ></a>
-          </li>
-        </ul>
-        <p class="text-center">
-          Copyright &copy; 2023 | built with
-          <a href="https://www.instagram.com/alcatrassie" target="_blank"
-            ><ion-icon name="heart-half-outline"></ion-icon
-          ></a>
-          by
-          <a href="https://www.instagram.com/kakasugus_" target="_blank"
-            >Shaka</a
-          >
-        </p>
-      </div>
+      <p>© 2025 Raesaka Dp | Built with ❤️ by Saka</p>
     </footer>
 
-    <!-- Iconsosmed -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
-    <!-- Form To Gmail -->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-
-    <!-- JS Files -->
-    <script src="js/purecounter/purecounter_vanilla.js"></script>
-    <script src="js/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- <script src="js/bootstrap/js/glightbox.min.js"></script> -->
-    <script src="js/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="js/swiper/swiper-bundle.min.js"></script>
-    <!-- <script src="js/waypoints/noframework.waypoints.js"></script> -->
-    <script src="js/aos/aos.js"></script>
-    <script src="js/typed.min.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <!-- link js panggil -->
+    <!-- JS -->
     <script src="js/script.js"></script>
   </body>
 </html>
