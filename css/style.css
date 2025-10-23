@@ -102,13 +102,13 @@ header{
 .dropdown_menu{
     display: none;
     flex-direction: column;
-    background: white;
+    background: var(--bg-color);
     position: absolute;
     top: 70px;
-    right: 2rem;
-    width: 200px;
+    right: 1rem;
+    width: 180px;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     transition: max-height 0.3 ease;
 }
@@ -119,11 +119,12 @@ header{
 
 .dropdown_menu li{
     padding: 1rem;
+    list-style: none;
     border-bottom: 1px solid #eee;
 }
 
 .dropdown_menu a{
-    color: #333;
+    color: var(--text-color);
     text-decoration: none;
     display: block;
 }
@@ -356,5 +357,7 @@ footer{
     .toggle_btn{
         display: block;
     }
+
+
 }
 
