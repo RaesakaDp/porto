@@ -84,3 +84,19 @@ function typeEffect() {
 
 document.addEventListener('DOMContentLoaded', typeEffect);
 
+// ===== Animate Education Cards on Scroll =====
+function animateEducation() {
+  const cards = document.querySelectorAll('.edu-card');
+  const windowHeight = window.innerHeight;
+
+  cards.forEach((card) => {
+    const rect = card.getBoundingClientRect();
+    const delay = parseInt(card.dataset.delay || 0);
+    if (rect.top < windowHeight - 100) {
+      setTimeout(() => card.classList.add('active'), delay);
+    }
+  });
+}
+
+window.addEventListener('scroll', animateEducation);
+window.addEventListener('load', animateEducation);
