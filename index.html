@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio | Raesaka</title>
+    <title>Raesaka Dp | Portfolio & Web Developer</title>
+    <meta name="description" content="Portofolio resmi Raesaka Dp - Mahasiswa Universitas Negeri Malang, Web Developer, dan Swimming Coach." />
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
 
     <!-- Font & Icons -->
     <script src="https://kit.fontawesome.com/6cbf6d93a4.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   </head>
 
   <body>
@@ -23,17 +24,19 @@
         <ul class="nav-links">
           <li><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
           <li><a href="#education">Education</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
 
         <div class="nav-actions">
-        <div class="theme-toggle" aria-label="Toggle theme">
+          <div class="theme-toggle" aria-label="Toggle theme">
             <i class="fa-solid fa-moon"></i>
-        </div>
-        <div class="toggle_btn" aria-label="Toggle menu">
+          </div>
+          <div class="toggle_btn" aria-label="Toggle menu">
             <i class="fa-solid fa-bars"></i>
-        </div>
+          </div>
         </div>
       </nav>
 
@@ -41,6 +44,8 @@
       <div class="dropdown_menu">
         <li><a href="#hero">Home</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#contact">Contact</a></li>
       </div>
@@ -48,137 +53,258 @@
 
     <!-- ===== HERO ===== -->
     <section id="hero" class="hero reveal">
-        <div class="hero-content">
-            <img src="img/profile.jpg" alt="Profile Photo" class="profile-pic">
+      <div class="hero-content">
 
-            <h1>Hi, I'm 
-                <span class="highlight">Saka</span>
-            </h1>
-            <h2>
-                <span class="typing"></span>
-            </h2>
+        <!-- HERO TEXT -->
+        <div class="hero-text">
+          <p class="hero-greeting">Hello, It's Me</p>
+          <h1>
+            <span>Raesaka</span><br>
+            <strong>Dwi Prayoga</strong>
+          </h1>
+          <h2>
+            And I'm a <span class="highlight typing"></span>
+          </h2>
+          <p class="hero-description">
+            Mahasiswa Universitas Negeri Malang yang memiliki passion di bidang teknologi, pengembangan web, dan olahraga renang.
+          </p>
 
-            <p> Welcome to my personal Portfolio website.</p>
+          <div class="hero-social">
+            <a href="https://instagram.com/username_anda" target="_blank" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://github.com/raesakadp" target="_blank" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/username_anda" target="_blank" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
 
-            <div class="hero-bottons">
-                <a href="#about" class="btn">About Me</a>
-                <a href="#contact" class="btn btn-outline"> Contact</a>
-            </div>
+          <div class="hero-buttons">
+            <a href="#about" class="btn">About Me</a>
+            <a href="#contact" class="btn btn-outline">Contact</a>
+          </div>
         </div>
+
+<!-- HERO PROFILE -->
+        <div class="hero-visual">
+          <div class="profile-card-modern">
+            <div class="profile-glow-effect"></div>
+            <div class="profile-img-wrapper">
+              <img src="img/Foto.png" alt="Raesaka Dp" class="profile-img-clean">
+            </div>
+          </div>
+        </div>
+
+      </div>
     </section>
 
-    <!-- ===== ABOUT ====== -->
+    <!-- ===== ABOUT ===== -->
     <section id="about" class="about-modern reveal">
-        <div class="about-container">
+      <div class="about-container">
+        <div class="about-image" id="tilt-card" data-speed="0.25">
+          <div class="glow"></div>
+          <img src="img/about.jpg" alt="About image">
+        </div>
 
-          <div class="about-image" id="tilt-card" data-speed="0.25">
-            <div class="glow"></div>
-            <img src="img/about.jpg" alt="About image">
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>Halo! Saya <strong>Raesaka Dp</strong>, seorang <strong>mahasiswa Universitas Negeri Malang</strong> yang bersemangat dalam dunia teknologi dan olahraga. Saat ini saya juga aktif sebagai <strong>Swimming Coach di Marabunta Swimming Club Kota Malang</strong>, membantu para atlet muda meningkatkan kemampuan mereka lewat latihan yang menyenangkan dan terstruktur.</p>
+          <p>Saya percaya bahwa pemrograman dan renang punya kesamaan: keduanya membutuhkan ritme, konsistensi, dan kreativitas. Itulah yang membuat saya terus berkembang baik di kolam renang maupun di depan layar laptop.</p>
+          
+          <div class="badges">
+            <span class="badge"><i class="fa-solid fa-code"></i> Web Developer</span>
+            <span class="badge"><i class="fa-solid fa-person-swimming"></i> Swim Coach</span>
+            <span class="badge"><i class="fa-solid fa-graduation-cap"></i> Mahasiswa UM</span>
           </div>
 
-          <div class="about-text">
-            <h2>About Me</h2>
-            <p>Halo! Saya <strong>Raesaka Dp</strong>, seorang <strong>mahasiswa Universitas Negeri Malang</strong> yang bersemangat dalam dunia teknologi dan olahraga. 
-              Saat ini saya juga aktif sebagai <strong>Swimming Coach di Marabunta Swimming Club Kota Malang</strong>, membantu para atlet muda meningkatkan kemampuan mereka 
-              lewat latihan yang menyenangkan dan terstruktur.</p>
-            <p>Saya percaya bahwa pemrograman dan renang punya kesamaan: keduanya membutuhkan ritme, konsistensi, dan kreativitas. 
-              Itulah yang membuat saya terus berkembang baik di kolam renang maupun di depan layar laptop.</p>
-            
-            <div class="badges">
-              <span class="badge"><i class="fa-solid fa-code"></i> Web Developer</span>
-              <span class="badge"><i class="fa-solid fa-person-swimming"></i> Swim Coach</span>
-              <span class="badge"><i class="fa-solid fa-graduation-cap"></i> Mahasiswa UM</span>
-            </div>
-
-            <div class="about-buttons">
-              <a href="#education" class="btn">My Education</a>
-              <a href="#contact" class="btn btn-outline">Let's Connect</a>
-            </div>
-
+          <div class="about-buttons">
+            <a href="#projects" class="btn">My Projects</a>
+            <a href="#contact" class="btn btn-outline">Let's Connect</a>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-    <!-- ===== EDUCATION ===== -->
-  <section id="education" class="education-modern reveal">
-    <div class="education-container">
-      <h2 class="section-title text-center"> My Education Journey</h2>
-      
-      <div class="edu-wrapper">
-        <!-- card 1 -->
-         <div class="edu-card" data-delay="0">
-          <div class="edu-year"> 2017-2020</div>
-          <div class="edu-content">
-            <h3>SMP Negeri 2 Kota Pasuruan</h3>
-            <p> Awal perjalanan akademik saya dimulai di SMP Negeri 2 Kota Pasuruan, 
-              tempat saya mulai menumbuhkan semangat kompetitif dan disiplin melalui dunia olahraga.
-            </p>
+    <!-- ===== SKILLS SECTION ===== -->
+    <section id="skills" class="skills-section reveal">
+      <div class="skills-container">
+        <h2 class="section-title text-center">My Skills & Expertise 💻</h2>
+        <p class="section-subtitle text-center">Teknologi dan keahlian yang saya gunakan untuk membangun karya.</p>
+
+        <div class="skills-grid">
+          <!-- Skill Item 1 -->
+          <div class="skill-card">
+            <i class="fa-brands fa-html5" style="color: #e34f26;"></i>
+            <h3>HTML5</h3>
+            <p>Struktur Web Semantik</p>
           </div>
-         </div>
 
-        <!-- card 2 -->
-         <div class="edu-card" data-delay="300">
-          <div class="edu-year"> 2020-2023</div>
-          <div class="edu-content">
-            <h3>SMK Negeri 1 Kota Pasuruan</h3>
-            <p> Melanjutkan pendidikan di SMK Negeri 1 Kota Pasuruan, 
-              saya semakin mengasah kemampuan akademik dan kepemimpinan saya, 
-              sambil tetap berkomitmen pada dunia renang.
-            </p>
+          <!-- Skill Item 2 -->
+          <div class="skill-card">
+            <i class="fa-brands fa-css3-alt" style="color: #1572b6;"></i>
+            <h3>CSS3</h3>
+            <p>Styling, Flexbox, & Grid</p>
+          </div>
+
+          <!-- Skill Item 3 -->
+          <div class="skill-card">
+            <i class="fa-brands fa-js" style="color: #f7df1e;"></i>
+            <h3>JavaScript</h3>
+            <p>Interaktivitas & DOM Manipulation</p>
+          </div>
+
+          <!-- Skill Item 4 -->
+          <div class="skill-card">
+            <i class="fa-brands fa-git-alt" style="color: #f05032;"></i>
+            <h3>Git & GitHub</h3>
+            <p>Version Control & Collaboration</p>
+          </div>
+
+          <!-- Skill Item 5 -->
+          <div class="skill-card">
+            <i class="fa-solid fa-person-swimming" style="color: var(--accent-color);"></i>
+            <h3>Swimming Coach</h3>
+            <p>Pelatih Atlet & Analisis Teknik</p>
+          </div>
+
+          <!-- Skill Item 6 -->
+          <div class="skill-card">
+            <i class="fa-solid fa-laptop-code" style="color: var(--accent-color);"></i>
+            <h3>Web Design</h3>
+            <p>Responsive & Modern UI</p>
+          </div>
+
+          <!-- Skill Item 7 (Microsoft Office) -->
+          <div class="skill-card">
+            <i class="fa-solid fa-file-excel" style="color: #217346;"></i>
+            <h3>Microsoft Office</h3>
+            <p>Word, Excel, & PowerPoint</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS SECTION (BARU) ===== -->
+    <section id="projects" class="projects-section reveal">
+      <div class="projects-container">
+        <h2 class="section-title text-center">Featured Projects 🚀</h2>
+        <p class="section-subtitle text-center">Beberapa karya dan proyek pengembangan web yang pernah saya buat.</p>
+        
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card">
+            <div class="project-img">
+              <img src="img/project1.png" alt="Project 1">
+            </div>
+            <div class="project-info">
+              <h3>SwimEduWeb</h3>
+              <p>Website pembelajaran interaktif berbasis web untuk membantu siswa memahami teknik renang dengan mudah, menarik, dan modern.</p>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JS</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/RaesakaDp/SwimEduWeb" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+                <a href="https://raesakadp.github.io/SwimEduWeb/index.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              </div>
             </div>
           </div>
 
-        <!-- card 3 -->
-         <div class="edu-card" data-delay="600">
-          <div class="edu-year"> 2024 - Now</div>
-          <div class="edu-content">
-            <h3>Universitas Negeri Malang</h3>
-            <p> Saat ini, saya menempuh pendidikan di Universitas Negeri Malang, 
-              di mana saya menggabungkan minat saya dalam teknologi dan olahraga, 
-              berusaha menjadi individu yang serba bisa dan berdedikasi.
-            </p>
+          <!-- Project 2 (Contoh placeholder proyek lain) -->
+          <div class="project-card">
+            <div class="project-img">
+              <img src="img/Aplikasi_Kasir_Cafeshop.jpg" alt="Project 2">
+            </div>
+            <div class="project-info">
+              <h3>"Kenangan Mantan" POS (Point of Sale)</h3>
+              <p>Aplikasi kasir kafe (Point of Sale) modern berbasis dark-mode yang dirancang untuk mengoptimalkan operasional bisnis kuliner secara real-time.</p>
+              <div class="project-tags">
+                <span>JavaScript</span><span>Web Design</span>
               </div>
+              <div class="project-links">
+                <a href="https://github.com/raesakadp" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+                 <a href="https://raesakadp.github.io/SwimEduWeb/index.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EDUCATION ===== -->
+    <section id="education" class="education-modern reveal">
+      <div class="education-container">
+        <h2 class="section-title text-center">My Education Journey 🎓</h2>
+        
+        <div class="edu-wrapper">
+          <!-- card 1 -->
+          <div class="edu-card" data-delay="0">
+            <div class="edu-year">2017 - 2020</div>
+            <div class="edu-content">
+              <h3>SMP Negeri 2 Kota Pasuruan</h3>
+              <p>Awal perjalanan akademik saya dimulai di SMP Negeri 2 Kota Pasuruan, tempat saya mulai menumbuhkan semangat kompetitif dan disiplin melalui dunia olahraga.</p>
+            </div>
           </div>
 
-      </div>
-    </div>
-  </section>
+          <!-- card 2 -->
+          <div class="edu-card" data-delay="300">
+            <div class="edu-year">2020 - 2023</div>
+            <div class="edu-content">
+              <h3>SMK Negeri 1 Kota Pasuruan</h3>
+              <p>Melanjutkan pendidikan di SMK Negeri 1 Kota Pasuruan, saya semakin mengasah kemampuan akademik dan kepemimpinan saya, sambil tetap berkomitmen pada dunia renang.</p>
+            </div>
+          </div>
 
-    <!-- ===== CONTACT ===== -->
-    <!-- <section id="contact" class="section reveal">
-      <h2>Contact</h2>
-      <p>Email: raesakadwiii@gmail.com</p>
-      <p>Instagram: <a href="https://instagram.com/kakasugus_">@kakasugus_</a></p>
-    </section> -->
+          <!-- card 3 -->
+          <div class="edu-card" data-delay="600">
+            <div class="edu-year">2024 - Now</div>
+            <div class="edu-content">
+              <h3>Universitas Negeri Malang</h3>
+              <p>Saat ini, saya menempuh pendidikan di Universitas Negeri Malang, di mana saya menggabungkan minat saya dalam teknologi dan olahraga, berusaha menjadi individu yang serba bisa dan berdedikasi.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- ===== CONTACT SECTION ===== -->
-<section id="contact" class="contact-section reveal">
-  <div class="contact-container">
-    <h2>Get in Touch 💬</h2>
-    <p>Let’s stay connected! Feel free to reach me through email or social media below.</p>
+    <section id="contact" class="contact-section reveal">
+      <div class="contact-container">
+        <h2>Get in Touch 💬</h2>
+        <p>Let’s stay connected! Feel free to reach me through email or social media below.</p>
 
-    <div class="contact-links">
-      <a href="mailto:your@email.com" class="contact-item">
-        <i class="fa-solid fa-envelope"></i>
-        <span>your@email.com</span>
-      </a>
+        <div class="contact-links">
+          <a href="mailto:emailanda@domain.com" class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span>emailanda@domain.com</span>
+          </a>
 
-      <div class="social-icons">
-        <a href="https://instagram.com/yourusername" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://github.com/raesakadp" target="_blank"><i class="fa-brands fa-github"></i></a>
-        <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://x.com/yourhandle" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+          <div class="social-icons">
+            <a href="https://instagram.com/username_anda" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/raesakadp" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com/in/username_anda" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://x.com/username_anda" target="_blank" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
+
+  <!-- ===== BACK TO TOP BUTTON ===== -->
+    <a href="#" class="back-to-top" id="backToTopBtn" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+    
 
     <!-- ===== FOOTER ===== -->
     <footer>
-      <p>© 2025 Raesaka Dp | Built with ❤️ by Saka</p>
+      <p>© 2026 Raesaka Dp | Built with ❤️ by Saka</p>
     </footer>
 
     <!-- JS -->
     <script src="js/script.js"></script>
+
+
   </body>
 </html>
