@@ -531,3 +531,94 @@ function playSoftClick() {
 document.querySelectorAll('.theme-toggle, .btn-detail').forEach((btn) => {
   btn.addEventListener('click', playSoftClick);
 });
+
+/* =================================================
+   INTERACTIVE ABOUT TABS
+================================================= */
+const tabButtons = document.querySelectorAll('.tab-btn');
+const tabPanels = document.querySelectorAll('.tab-panel');
+
+tabButtons.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const targetTab = btn.getAttribute('data-tab');
+
+    // Reset semua tombol dan panel
+    tabButtons.forEach((b) => {
+      b.classList.remove('active');
+      b.setAttribute('aria-selected', 'false');
+    });
+    tabPanels.forEach((panel) => panel.classList.remove('active'));
+
+    // Aktifkan tombol dan panel yang dipilih
+    btn.classList.add('active');
+    btn.setAttribute('aria-selected', 'true');
+    const activePanel = document.getElementById(`panel-${targetTab}`);
+    if (activePanel) activePanel.classList.add('active');
+
+    // Bunyikan efek klik halus jika tersedia
+    if (typeof playSoftClick === 'function') playSoftClick();
+  });
+});
+
+/* =================================================
+   LIVE ACCENT COLOR SWITCHER
+================================================= */
+const accentDots = document.querySelectorAll('.accent-dot');
+
+// Helper konversi Hex ke RGB untuk variabel border/card transparan
+function hexToRgb(hex) {
+  const cleanHex = hex.replace('#', '');
+  const bigint = parseInt(cleanHex, 16);
+  const r = (bigint >> 16) & 255;
+  const g = (bigint >> 8) & 255;
+  const b = bigint & 255;
+  return `${r}, ${g}, ${b}`;
+}
+
+function applyAccentColor(lightHex, darkHex) {
+  const isDark = document.body.classList.contains('dark-mode');
+  const activeHex = isDark ? darkHex : lightHex;
+  const rgb = hexToRgb(activeHex);
+
+  document.documentElement.style.setProperty('--accent-color', activeHex);
+  document.documentElement.style.setProperty('--card-bg', `rgba(${rgb}, 0.06)`);
+  document.documentElement.style.setProperty('--card-border', `rgba(${rgb}, 0.25)`);
+}
+
+// Muat warna aksen tersimpan saat halaman dibuka
+const savedLightAccent = localStorage.getItem('portfolio-accent-light');
+const savedDarkAccent = localStorage.getItem('portfolio-accent-dark');
+
+if (savedLightAccent && savedDarkAccent) {
+  applyAccentColor(savedLightAccent, savedDarkAccent);
+  accentDots.forEach((dot) => {
+    dot.classList.toggle('active', dot.dataset.color === savedLightAccent);
+  });
+}
+
+// Event klik pada masing-masing titik warna
+accentDots.forEach((dot) => {
+  dot.addEventListener('click', () => {
+    const lightHex = dot.dataset.color;
+    const darkHex = dot.dataset.darkColor;
+
+    accentDots.forEach((d) => d.classList.remove('active'));
+    dot.classList.add('active');
+
+    applyAccentColor(lightHex, darkHex);
+
+    localStorage.setItem('portfolio-accent-light', lightHex);
+    localStorage.setItem('portfolio-accent-dark', darkHex);
+
+    if (typeof playSoftClick === 'function') playSoftClick();
+    if (typeof showToast === 'function') showToast(`Warna aksen diubah ke ${dot.title}`);
+  });
+});
+
+// Sinkronkan ulang nuansa warna aksen saat tombol Dark/Light Mode diklik
+document.querySelector('.theme-toggle')?.addEventListener('click', () => {
+  const activeDot = document.querySelector('.accent-dot.active');
+  if (activeDot) {
+    applyAccentColor(activeDot.dataset.color, activeDot.dataset.darkColor);
+  }
+});

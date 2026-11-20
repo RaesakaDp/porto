@@ -12,6 +12,19 @@
     <!-- Font & Icons -->
     <script src="https://kit.fontawesome.com/6cbf6d93a4.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+<!-- SEO & Open Graph Metadata -->
+<meta name="description" content="Portofolio Raesaka Dwi Prayoga — Frontend Web Developer & Mahasiswa Universitas Negeri Malang. Membangun antarmuka web modern, responsif, dan interaktif.">
+<meta name="keywords" content="Raesaka Dwi Prayoga, Web Developer Malang, Frontend Developer, Portfolio Web, Universitas Negeri Malang">
+<meta name="author" content="Raesaka Dwi Prayoga">
+
+<!-- Open Graph (WhatsApp, LinkedIn, Facebook) -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Raesaka Dwi Prayoga | Frontend Web Developer">
+<meta property="og:description" content="Lihat karya proyek web, studi kasus aplikasi, dan profil lengkap Raesaka Dwi Prayoga.">
+<meta property="og:image" content="img/project1.png">
+<meta property="og:url" content="https://raesakadp.github.io/">
+
   </head>
 
   <body>
@@ -31,12 +44,31 @@
         </ul>
 
         <div class="nav-actions">
-          <div class="theme-toggle" aria-label="Toggle theme">
+          <!-- <div class="theme-toggle" aria-label="Toggle theme">
             <i class="fa-solid fa-moon"></i>
-          </div>
-          <div class="toggle_btn" aria-label="Toggle menu">
+          </div> -->
+          <div class="nav-actions">
+  <!-- Pemilih Warna Aksen -->
+  <div class="accent-picker" aria-label="Pilih warna aksen">
+    <button type="button" class="accent-dot active" data-color="#00adb5" data-dark-color="#22d3ee" style="--dot-color: #00adb5;" title="Cyan"></button>
+    <button type="button" class="accent-dot" data-color="#10b981" data-dark-color="#34d399" style="--dot-color: #10b981;" title="Emerald"></button>
+    <button type="button" class="accent-dot" data-color="#6366f1" data-dark-color="#818cf8" style="--dot-color: #6366f1;" title="Indigo"></button>
+    <button type="button" class="accent-dot" data-color="#f59e0b" data-dark-color="#fbbf24" style="--dot-color: #f59e0b;" title="Amber"></button>
+  </div>
+
+  <!-- Toggle Dark Mode -->
+  <div class="theme-toggle" aria-label="Toggle theme">
+    <i class="fa-solid fa-moon"></i>
+  </div>
+
+  <!-- Hamburger Menu Mobile -->
+  <div class="toggle_btn" aria-label="Toggle menu">
+    <i class="fa-solid fa-bars"></i>
+  </div>
+</div>
+          <!-- <div class="toggle_btn" aria-label="Toggle menu">
             <i class="fa-solid fa-bars"></i>
-          </div>
+          </div> -->
         </div>
       </nav>
 
@@ -128,67 +160,94 @@
      </div>
     </section>
 
-<!-- ===== ABOUT SECTION (MODERN BENTO GRID) ===== -->
+<!-- ===== ABOUT SECTION (INTERACTIVE TABS) ===== -->
 <section id="about" class="about-modern reveal">
   <div class="about-wrapper">
     <div class="about-header text-center">
       <span class="section-tag">Get To Know Me</span>
       <h2 class="section-title">About Me 👨‍💻</h2>
-      <p class="section-subtitle">Perpaduan antara logika pengembangan web dan kedisiplinan kepemimpinan.</p>
+      <p class="section-subtitle">Klik tab di bawah untuk mengenal latar belakang teknologi, kepemimpinan, dan cara kerja saya.</p>
     </div>
 
-    <div class="bento-grid">
-      <!-- Kartu 1: Foto Profil & Lokasi -->
-      <div class="bento-card bento-photo" id="tilt-card">
+    <div class="about-tab-container">
+      <!-- Kolom Kiri: Foto Profil dengan Efek 3D Tilt -->
+      <div class="about-visual-card" id="tilt-card">
         <img src="img/about.jpg" alt="Raesaka Dwi Prayoga">
         <div class="photo-badge">
-          <i class="fa-solid fa-location-dot"></i> Malang, Indonesia
+          <i class="fa-solid fa-location-dot"></i> Malang, East Java
         </div>
       </div>
 
-      <!-- Kartu 2: Bio Utama (Web Developer) -->
-      <div class="bento-card bento-bio">
-        <h3>Frontend Web Developer & Mahasiswa UM</h3>
-        <p>
-          Halo! Saya <strong>Raesaka Dwi Prayoga</strong>, mahasiswa <strong>Universitas Negeri Malang</strong> yang berfokus pada pengembangan aplikasi web modern dan perancangan antarmuka pengguna (UI/UX).
-        </p>
-        <p>
-          Saya menikmati proses membangun website yang bersih, responsif, dan fungsional—mulai dari merancang struktur kode yang rapi hingga menciptakan interaksi pengguna yang intuitif.
-        </p>
+      <!-- Kolom Kanan: Navigasi Tab & Konten Dinamis -->
+      <div class="about-content-box">
+        <!-- Tombol Navigasi Tab -->
+        <div class="about-tabs" role="tablist">
+          <button class="tab-btn active" data-tab="bio" role="tab" aria-selected="true">
+            <i class="fa-solid fa-code"></i> Ringkasan Bio
+          </button>
+          <button class="tab-btn" data-tab="coaching" role="tab" aria-selected="false">
+            <i class="fa-solid fa-person-swimming"></i> Pengalaman Melatih
+          </button>
+          <button class="tab-btn" data-tab="vision" role="tab" aria-selected="false">
+            <i class="fa-solid fa-compass"></i> Visi & Cara Kerja
+          </button>
+        </div>
+
+        <!-- Isi Konten Tab -->
+        <div class="tab-panels">
+          <!-- Panel 1: Ringkasan Bio -->
+          <div class="tab-panel active" id="panel-bio" role="tabpanel">
+            <h3>Frontend Web Developer & Mahasiswa UM</h3>
+            <p>
+              Halo! Saya <strong>Raesaka Dwi Prayoga</strong>, mahasiswa <strong>Universitas Negeri Malang</strong> dengan fokus utama pada pengembangan web modern dan perancangan antarmuka pengguna (UI/UX).
+            </p>
+            <p>
+              Saya senang menerjemahkan kebutuhan nyata menjadi aplikasi web yang cepat, responsif, dan mudah dipahami—seperti membangun sistem kasir kafe <em>real-time</em> hingga platform edukasi interaktif.
+            </p>
+            <div class="tab-highlights">
+              <span><i class="fa-solid fa-check"></i> Clean & Semantic Code</span>
+              <span><i class="fa-solid fa-check"></i> Responsive Design</span>
+              <span><i class="fa-solid fa-check"></i> Interactive UI</span>
+            </div>
+          </div>
+
+          <!-- Panel 2: Pengalaman Melatih -->
+          <div class="tab-panel" id="panel-coaching" role="tabpanel">
+            <h3>Swimming Coach — Marabunta Swimming Club</h3>
+            <p>
+              Di luar dunia pemrograman, saya aktif melatih atlet muda di <strong>Marabunta Swimming Club Kota Malang</strong>. Bagi saya, melatih di pinggir kolam adalah sekolah terbaik untuk mengasah <em>soft skill</em> kepemimpinan.
+            </p>
+            <p>
+              Peran ini melatih saya menyusun program latihan yang terstruktur, berkomunikasi secara jelas dengan berbagai karakter atlet, serta menjaga konsistensi tim di bawah tekanan kompetisi.
+            </p>
+            <div class="tab-highlights">
+              <span><i class="fa-solid fa-check"></i> Team Leadership</span>
+              <span><i class="fa-solid fa-check"></i> Structured Planning</span>
+              <span><i class="fa-solid fa-check"></i> Effective Communication</span>
+            </div>
+          </div>
+
+          <!-- Panel 3: Visi & Cara Kerja -->
+          <div class="tab-panel" id="panel-vision" role="tabpanel">
+            <h3>Ritme, Konsistensi, & Solusi Nyata</h3>
+            <p>
+              Saya percaya pemrograman dan olahraga renang memiliki fondasi yang sama: <strong>teknik yang benar, ritme yang terjaga, dan evaluasi berkelanjutan</strong>.
+            </p>
+            <p>
+              Visi saya adalah terus berkembang sebagai <em>Software Developer</em> yang tidak hanya mahir menulis kode, tetapi juga peka terhadap kebutuhan pengguna (<em>user-centered</em>) dan mampu berkolaborasi solid dalam tim pengembangan produk.
+            </p>
+            <div class="tab-highlights">
+              <span><i class="fa-solid fa-check"></i> User-Centered Mindset</span>
+              <span><i class="fa-solid fa-check"></i> Continuous Learning</span>
+              <span><i class="fa-solid fa-check"></i> Problem Solving</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tombol Aksi Tetap di Bawah Panel -->
         <div class="about-buttons">
-          <a href="#projects" class="btn">Explore Projects</a>
-          <a href="#contact" class="btn btn-outline">Let's Connect</a>
-        </div>
-      </div>
-
-      <!-- Kartu 3: Quick Stats -->
-      <div class="bento-card bento-stats">
-        <div class="stat-item">
-          <span class="stat-number">3+</span>
-          <span class="stat-label">Web Projects</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-          <span class="stat-number">2024</span>
-          <span class="stat-label">Mahasiswa UM</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-          <span class="stat-number">100%</span>
-          <span class="stat-label">Commitment</span>
-        </div>
-      </div>
-
-      <!-- Kartu 4: Beyond Coding (Sisi Unik / Leadership) -->
-      <div class="bento-card bento-beyond">
-        <div class="beyond-icon">
-          <i class="fa-solid fa-person-swimming"></i>
-        </div>
-        <div class="beyond-content">
-          <h4>Beyond Coding: Leadership & Discipline</h4>
-          <p>
-            Di luar layar laptop, saya aktif sebagai <strong>Swimming Coach di Marabunta Swimming Club Malang</strong>. Peran ini melatih saya dalam manajemen tim, komunikasi efektif, dan konsistensi tinggi—nilai yang selalu saya terapkan dalam setiap proyek pengembangan web.
-          </p>
+          <a href="#projects" class="btn">Lihat Proyek Saya</a>
+          <a href="#contact" class="btn btn-outline">Hubungi Saya</a>
         </div>
       </div>
     </div>

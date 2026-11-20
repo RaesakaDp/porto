@@ -457,7 +457,7 @@ body.dark-mode .floating-badge {
 }
 
 /* =================================================
-   5. ABOUT SECTION (MODERN BENTO GRID)
+   5. ABOUT SECTION (INTERACTIVE TABS)
 ================================================= */
 .about-modern {
   padding: 5.5rem 1.5rem;
@@ -479,36 +479,30 @@ body.dark-mode .floating-badge {
   margin-bottom: 0.4rem;
 }
 
-.bento-grid {
+.about-tab-container {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 1.5rem;
-}
-
-.bento-card {
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 2.5rem;
+  align-items: stretch;
   background: var(--card-bg);
   border: 1px solid var(--card-border);
-  border-radius: 22px;
-  padding: 1.8rem;
+  border-radius: 24px;
+  padding: 2rem;
   backdrop-filter: blur(10px);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
-.bento-card:hover {
-  border-color: var(--accent-color);
-  box-shadow: 0 12px 30px rgba(0, 173, 181, 0.14);
-}
-
-/* Kartu 1: Foto (4 Kolom) */
-.bento-photo {
-  grid-column: span 4;
-  padding: 0;
+/* Kolom Kiri: Foto */
+.about-visual-card {
   position: relative;
+  border-radius: 18px;
   overflow: hidden;
-  min-height: 320px;
+  min-height: 360px;
+  border: 2px solid var(--card-border);
+  transition: transform 0.25s ease-out;
+  will-change: transform;
 }
 
-.bento-photo img {
+.about-visual-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -516,15 +510,15 @@ body.dark-mode .floating-badge {
   transition: transform 0.5s ease;
 }
 
-.bento-photo:hover img {
-  transform: scale(1.05);
+.about-visual-card:hover img {
+  transform: scale(1.04);
 }
 
 .photo-badge {
   position: absolute;
   bottom: 14px;
   left: 14px;
-  background: rgba(15, 23, 42, 0.8);
+  background: rgba(15, 23, 42, 0.85);
   color: #ffffff;
   padding: 6px 14px;
   border-radius: 999px;
@@ -541,123 +535,149 @@ body.dark-mode .floating-badge {
   color: var(--accent-color);
 }
 
-/* Kartu 2: Bio Utama (8 Kolom) */
-.bento-bio {
-  grid-column: span 8;
+/* Kolom Kanan: Tab Navigation & Content */
+.about-content-box {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+}
+
+.about-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 6px;
+  background: rgba(0, 173, 181, 0.08);
+  border: 1px solid var(--card-border);
+  border-radius: 14px;
+  margin-bottom: 1.5rem;
+}
+
+.tab-btn {
+  flex: 1;
+  min-width: 140px;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  color: var(--text-color);
+  font-family: inherit;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
   justify-content: center;
+  gap: 8px;
+  transition: all 0.25s ease;
+  opacity: 0.75;
 }
 
-.bento-bio h3 {
+.tab-btn:hover {
+  opacity: 1;
   color: var(--accent-color);
-  font-size: 1.5rem;
-  margin: 0 0 1rem;
 }
 
-.bento-bio p {
+.tab-btn.active {
+  background: var(--accent-color);
+  color: #ffffff;
+  opacity: 1;
+  box-shadow: 0 4px 12px rgba(0, 173, 181, 0.3);
+}
+
+/* Panel Konten dengan Animasi Fade-Slide */
+.tab-panel {
+  display: none;
+  animation: tabFadeSlide 0.35s ease forwards;
+}
+
+.tab-panel.active {
+  display: block;
+}
+
+.tab-panel h3 {
+  color: var(--accent-color);
+  font-size: 1.35rem;
+  margin: 0 0 0.8rem;
+}
+
+.tab-panel p {
   margin: 0 0 1rem;
   line-height: 1.75;
-  font-size: 0.96rem;
+  font-size: 0.95rem;
   opacity: 0.9;
+}
+
+.tab-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 1.2rem 0 1.5rem;
+}
+
+.tab-highlights span {
+  font-size: 0.82rem;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 8px;
+  background: rgba(0, 173, 181, 0.1);
+  border: 1px solid var(--card-border);
+  color: var(--text-color);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.tab-highlights span i {
+  color: var(--accent-color);
 }
 
 .about-buttons {
   display: flex;
   gap: 12px;
-  margin-top: 0.6rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--card-border);
 }
 
-/* Kartu 3: Quick Stats (5 Kolom) */
-.bento-stats {
-  grid-column: span 5;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  text-align: center;
-}
-
-.stat-item {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.stat-number {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: var(--accent-color);
-  line-height: 1.1;
-}
-
-.stat-label {
-  font-size: 0.8rem;
-  opacity: 0.8;
-  font-weight: 500;
-}
-
-.stat-divider {
-  width: 1px;
-  height: 40px;
-  background: var(--card-border);
-}
-
-/* Kartu 4: Beyond Coding (7 Kolom) */
-.bento-beyond {
-  grid-column: span 7;
-  display: flex;
-  align-items: center;
-  gap: 1.2rem;
-}
-
-.beyond-icon {
-  width: 54px;
-  height: 54px;
-  min-width: 54px;
-  border-radius: 16px;
-  background: rgba(0, 173, 181, 0.15);
-  color: var(--accent-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.5rem;
-}
-
-.beyond-content h4 {
-  margin: 0 0 0.4rem;
-  color: var(--text-color);
-  font-size: 1.05rem;
-}
-
-.beyond-content p {
-  margin: 0;
-  font-size: 0.88rem;
-  line-height: 1.6;
-  opacity: 0.85;
+@keyframes tabFadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Responsif untuk Tablet & HP */
-@media (max-width: 900px) {
-  .bento-photo,
-  .bento-bio,
-  .bento-stats,
-  .bento-beyond {
-    grid-column: span 12;
+@media (max-width: 860px) {
+  .about-tab-container {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
   }
 
-  .bento-photo {
-    max-height: 360px;
+  .about-visual-card {
+    min-height: 280px;
+    max-height: 340px;
   }
 }
 
 @media (max-width: 480px) {
-  .bento-beyond {
+  .about-tabs {
     flex-direction: column;
-    align-items: flex-start;
   }
 
-  .stat-number {
-    font-size: 1.5rem;
+  .tab-btn {
+    width: 100%;
+  }
+
+  .about-buttons {
+    flex-direction: column;
+  }
+
+  .about-buttons .btn {
+    text-align: center;
   }
 }
 
@@ -1587,4 +1607,50 @@ footer p {
   color: #f8fafc;
   font-family: inherit;
   font-size: 0.9rem;
+}
+
+/* =================================================
+   LIVE ACCENT COLOR SWITCHER (NAVBAR)
+================================================= */
+.accent-picker {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+}
+
+.accent-dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  background-color: var(--dot-color);
+  cursor: pointer;
+  padding: 0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.accent-dot:hover {
+  transform: scale(1.2);
+}
+
+.accent-dot.active {
+  border-color: var(--bg-color);
+  box-shadow: 0 0 0 2px var(--dot-color);
+  transform: scale(1.15);
+}
+
+@media (max-width: 480px) {
+  .accent-picker {
+    gap: 5px;
+    padding: 4px 8px;
+  }
+
+  .accent-dot {
+    width: 13px;
+    height: 13px;
+  }
 }
